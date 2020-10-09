@@ -2,4 +2,7 @@
 The 306 game for the class project by group 13.
 
 Siddhant Agrawal - saa464
+
 Matthew Lu - mal660
+
+Josh Hall - jah073
