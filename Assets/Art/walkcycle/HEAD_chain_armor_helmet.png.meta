@@ -1,0 +1,1294 @@
+fileFormatVersion: 2
+guid: f17111dfbe511314aa1fc5759bf7cbbe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5352483851176247710
+    second: HEAD_chain_armor_helmet_0
+  - first:
+      213: 9182614497865437131
+    second: HEAD_chain_armor_helmet_1
+  - first:
+      213: 1484811242452744257
+    second: HEAD_chain_armor_helmet_2
+  - first:
+      213: -6587932526994360178
+    second: HEAD_chain_armor_helmet_3
+  - first:
+      213: 6602186121373000153
+    second: HEAD_chain_armor_helmet_4
+  - first:
+      213: 3461086748753974374
+    second: HEAD_chain_armor_helmet_5
+  - first:
+      213: -1693440277609606033
+    second: HEAD_chain_armor_helmet_6
+  - first:
+      213: -7805826651991766430
+    second: HEAD_chain_armor_helmet_7
+  - first:
+      213: 8742870976375689917
+    second: HEAD_chain_armor_helmet_8
+  - first:
+      213: 5401471590511046119
+    second: HEAD_chain_armor_helmet_9
+  - first:
+      213: 6783911848554011375
+    second: HEAD_chain_armor_helmet_10
+  - first:
+      213: -4108822912828436970
+    second: HEAD_chain_armor_helmet_11
+  - first:
+      213: 7089500511006816018
+    second: HEAD_chain_armor_helmet_12
+  - first:
+      213: -7661197011569760447
+    second: HEAD_chain_armor_helmet_13
+  - first:
+      213: -3827995224699304708
+    second: HEAD_chain_armor_helmet_14
+  - first:
+      213: 1287380982265410423
+    second: HEAD_chain_armor_helmet_15
+  - first:
+      213: -535624152490139259
+    second: HEAD_chain_armor_helmet_16
+  - first:
+      213: -6931879783405918185
+    second: HEAD_chain_armor_helmet_17
+  - first:
+      213: -5245631749325338461
+    second: HEAD_chain_armor_helmet_18
+  - first:
+      213: 6012660559172322487
+    second: HEAD_chain_armor_helmet_19
+  - first:
+      213: 6903028549053960
+    second: HEAD_chain_armor_helmet_20
+  - first:
+      213: 5144297738560991600
+    second: HEAD_chain_armor_helmet_21
+  - first:
+      213: -836278814151842889
+    second: HEAD_chain_armor_helmet_22
+  - first:
+      213: 3466722729935560359
+    second: HEAD_chain_armor_helmet_23
+  - first:
+      213: -5959773514374792119
+    second: HEAD_chain_armor_helmet_24
+  - first:
+      213: -2099943867325339986
+    second: HEAD_chain_armor_helmet_25
+  - first:
+      213: 4628724501317979027
+    second: HEAD_chain_armor_helmet_26
+  - first:
+      213: -4285538858885550327
+    second: HEAD_chain_armor_helmet_27
+  - first:
+      213: 4085959487963647046
+    second: HEAD_chain_armor_helmet_28
+  - first:
+      213: -7944358450189577454
+    second: HEAD_chain_armor_helmet_29
+  - first:
+      213: -4697318691205887433
+    second: HEAD_chain_armor_helmet_30
+  - first:
+      213: 8317776136665902631
+    second: HEAD_chain_armor_helmet_31
+  - first:
+      213: -1036313663781169108
+    second: HEAD_chain_armor_helmet_32
+  - first:
+      213: -5924242002760559929
+    second: HEAD_chain_armor_helmet_33
+  - first:
+      213: -1816613139337651054
+    second: HEAD_chain_armor_helmet_34
+  - first:
+      213: 1384659692306333338
+    second: HEAD_chain_armor_helmet_35
+  - first:
+      213: 8068088809157729681
+    second: HEAD_chain_armor_helmet_0
+  - first:
+      213: -1388418161678870640
+    second: HEAD_chain_armor_helmet_1
+  - first:
+      213: 4896675883074186611
+    second: HEAD_chain_armor_helmet_2
+  - first:
+      213: 8446389401157025017
+    second: HEAD_chain_armor_helmet_3
+  - first:
+      213: -7890118125284456594
+    second: HEAD_chain_armor_helmet_4
+  - first:
+      213: 7156160783263094696
+    second: HEAD_chain_armor_helmet_5
+  - first:
+      213: 8713944644683197676
+    second: HEAD_chain_armor_helmet_6
+  - first:
+      213: -6224791732249668411
+    second: HEAD_chain_armor_helmet_7
+  - first:
+      213: -3206627251664961358
+    second: HEAD_chain_armor_helmet_8
+  - first:
+      213: 6147084270021460044
+    second: HEAD_chain_armor_helmet_9
+  - first:
+      213: -910165448819414381
+    second: HEAD_chain_armor_helmet_10
+  - first:
+      213: -8268853642196866188
+    second: HEAD_chain_armor_helmet_11
+  - first:
+      213: 3156740077679570663
+    second: HEAD_chain_armor_helmet_12
+  - first:
+      213: 2277170691720023388
+    second: HEAD_chain_armor_helmet_13
+  - first:
+      213: -8906843849150941340
+    second: HEAD_chain_armor_helmet_14
+  - first:
+      213: -1333889485450898638
+    second: HEAD_chain_armor_helmet_15
+  - first:
+      213: 3341355005469989733
+    second: HEAD_chain_armor_helmet_16
+  - first:
+      213: -680043422231631972
+    second: HEAD_chain_armor_helmet_17
+  - first:
+      213: 968906614089738451
+    second: HEAD_chain_armor_helmet_18
+  - first:
+      213: 2513327337491144615
+    second: HEAD_chain_armor_helmet_19
+  - first:
+      213: -6798376516115865249
+    second: HEAD_chain_armor_helmet_20
+  - first:
+      213: 6011183515379477526
+    second: HEAD_chain_armor_helmet_21
+  - first:
+      213: 5774168473024669938
+    second: HEAD_chain_armor_helmet_22
+  - first:
+      213: -5154946236545490227
+    second: HEAD_chain_armor_helmet_23
+  - first:
+      213: -1646908436439938592
+    second: HEAD_chain_armor_helmet_24
+  - first:
+      213: -7856075024790804057
+    second: HEAD_chain_armor_helmet_25
+  - first:
+      213: -1888447474012648364
+    second: HEAD_chain_armor_helmet_26
+  - first:
+      213: 5295208604460455126
+    second: HEAD_chain_armor_helmet_27
+  - first:
+      213: -9008903288872761925
+    second: HEAD_chain_armor_helmet_28
+  - first:
+      213: 1964583546576294703
+    second: HEAD_chain_armor_helmet_29
+  - first:
+      213: 74622666635026699
+    second: HEAD_chain_armor_helmet_30
+  - first:
+      213: -2317285691583807998
+    second: HEAD_chain_armor_helmet_31
+  - first:
+      213: -4643538137947495752
+    second: HEAD_chain_armor_helmet_32
+  - first:
+      213: 4968342718422188623
+    second: HEAD_chain_armor_helmet_33
+  - first:
+      213: 3700294810065876529
+    second: HEAD_chain_armor_helmet_34
+  - first:
+      213: 7913821835138930678
+    second: HEAD_chain_armor_helmet_35
+  - first:
+      213: 8796761473765731601
+    second: HEAD_chain_armor_helmet_36
+  - first:
+      213: 2445660253286803086
+    second: HEAD_chain_armor_helmet_37
+  - first:
+      213: 7745444721768116055
+    second: HEAD_chain_armor_helmet_38
+  - first:
+      213: -1688868694055970050
+    second: HEAD_chain_armor_helmet_39
+  - first:
+      213: 4646087972932002522
+    second: HEAD_chain_armor_helmet_40
+  - first:
+      213: 3113146382510287687
+    second: HEAD_chain_armor_helmet_41
+  - first:
+      213: 116325122138906410
+    second: HEAD_chain_armor_helmet_42
+  - first:
+      213: 1086231402335114705
+    second: HEAD_chain_armor_helmet_43
+  - first:
+      213: 8797999008352794312
+    second: HEAD_chain_armor_helmet_44
+  - first:
+      213: 9071193192897910511
+    second: HEAD_chain_armor_helmet_45
+  - first:
+      213: -5542912476410687891
+    second: HEAD_chain_armor_helmet_46
+  - first:
+      213: 5600713593977429251
+    second: HEAD_chain_armor_helmet_47
+  - first:
+      213: 7062171093057269200
+    second: HEAD_chain_armor_helmet_48
+  - first:
+      213: 3879468145942459278
+    second: HEAD_chain_armor_helmet_49
+  - first:
+      213: -2509339802939466130
+    second: HEAD_chain_armor_helmet_50
+  - first:
+      213: -2690817718566518528
+    second: HEAD_chain_armor_helmet_51
+  - first:
+      213: -2761631570760736195
+    second: HEAD_chain_armor_helmet_52
+  - first:
+      213: 912470913638017741
+    second: HEAD_chain_armor_helmet_53
+  - first:
+      213: 5538440658625293370
+    second: HEAD_chain_armor_helmet_54
+  - first:
+      213: -8689848215239106800
+    second: HEAD_chain_armor_helmet_55
+  - first:
+      213: 196398467508911135
+    second: HEAD_chain_armor_helmet_56
+  - first:
+      213: -2215638885340248037
+    second: HEAD_chain_armor_helmet_57
+  - first:
+      213: -4343359399260630270
+    second: HEAD_chain_armor_helmet_58
+  - first:
+      213: 2452396553176871021
+    second: HEAD_chain_armor_helmet_59
+  - first:
+      213: -3338607679297754532
+    second: HEAD_chain_armor_helmet_60
+  - first:
+      213: -6289915456339298198
+    second: HEAD_chain_armor_helmet_61
+  - first:
+      213: -8565195580725920077
+    second: HEAD_chain_armor_helmet_62
+  - first:
+      213: -8425483696766289342
+    second: HEAD_chain_armor_helmet_63
+  - first:
+      213: 1628733491830430451
+    second: HEAD_chain_armor_helmet_64
+  - first:
+      213: -5375735284107983981
+    second: HEAD_chain_armor_helmet_65
+  - first:
+      213: -1764450051121863716
+    second: HEAD_chain_armor_helmet_66
+  - first:
+      213: -1131703950232939197
+    second: HEAD_chain_armor_helmet_67
+  - first:
+      213: 1173071499568150381
+    second: HEAD_chain_armor_helmet_68
+  - first:
+      213: -2333196564851556118
+    second: HEAD_chain_armor_helmet_69
+  - first:
+      213: 4921733807975450287
+    second: HEAD_chain_armor_helmet_70
+  - first:
+      213: 8375519533645487153
+    second: HEAD_chain_armor_helmet_71
+  - first:
+      213: -4090602245421316212
+    second: HEAD_chain_armor_helmet_36
+  - first:
+      213: -4849017514336399568
+    second: HEAD_chain_armor_helmet_37
+  - first:
+      213: -6607401172139228074
+    second: HEAD_chain_armor_helmet_38
+  - first:
+      213: -6699777467754662685
+    second: HEAD_chain_armor_helmet_39
+  - first:
+      213: 6601791640862398820
+    second: HEAD_chain_armor_helmet_40
+  - first:
+      213: -1710436820074188619
+    second: HEAD_chain_armor_helmet_41
+  - first:
+      213: 2206481277527807819
+    second: HEAD_chain_armor_helmet_42
+  - first:
+      213: 5882100071830806957
+    second: HEAD_chain_armor_helmet_43
+  - first:
+      213: -4297441909055561209
+    second: HEAD_chain_armor_helmet_44
+  - first:
+      213: -6621064123333455027
+    second: HEAD_chain_armor_helmet_45
+  - first:
+      213: 6797356806632563079
+    second: HEAD_chain_armor_helmet_46
+  - first:
+      213: 6938272048514519120
+    second: HEAD_chain_armor_helmet_47
+  - first:
+      213: 7716903451831861963
+    second: HEAD_chain_armor_helmet_48
+  - first:
+      213: 2684447468735027120
+    second: HEAD_chain_armor_helmet_49
+  - first:
+      213: 7355113715843778877
+    second: HEAD_chain_armor_helmet_50
+  - first:
+      213: -1299597190599367223
+    second: HEAD_chain_armor_helmet_51
+  - first:
+      213: -1789818732184958020
+    second: HEAD_chain_armor_helmet_52
+  - first:
+      213: -6644094653786328450
+    second: HEAD_chain_armor_helmet_53
+  - first:
+      213: 6584510974307513123
+    second: HEAD_chain_armor_helmet_54
+  - first:
+      213: -7626821350813798351
+    second: HEAD_chain_armor_helmet_55
+  - first:
+      213: -5832472431114448358
+    second: HEAD_chain_armor_helmet_56
+  - first:
+      213: 5688239173652616761
+    second: HEAD_chain_armor_helmet_57
+  - first:
+      213: -7038347491062649335
+    second: HEAD_chain_armor_helmet_58
+  - first:
+      213: 3943551630077883043
+    second: HEAD_chain_armor_helmet_59
+  - first:
+      213: -3244973233807069223
+    second: HEAD_chain_armor_helmet_60
+  - first:
+      213: 6053791226111206256
+    second: HEAD_chain_armor_helmet_61
+  - first:
+      213: 3254539153953994153
+    second: HEAD_chain_armor_helmet_62
+  - first:
+      213: -6510406138555262208
+    second: HEAD_chain_armor_helmet_63
+  - first:
+      213: -4793308854242402830
+    second: HEAD_chain_armor_helmet_64
+  - first:
+      213: 3796198400895514522
+    second: HEAD_chain_armor_helmet_65
+  - first:
+      213: 4500310103293230574
+    second: HEAD_chain_armor_helmet_66
+  - first:
+      213: 1509060246077515399
+    second: HEAD_chain_armor_helmet_67
+  - first:
+      213: -1864505243275487206
+    second: HEAD_chain_armor_helmet_68
+  - first:
+      213: 2534480460520648127
+    second: HEAD_chain_armor_helmet_69
+  - first:
+      213: -4802960133235065545
+    second: HEAD_chain_armor_helmet_70
+  - first:
+      213: -102227442158337048
+    second: HEAD_chain_armor_helmet_71
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d962e760c97ff60800000000000000
+      internalID: 8068088809157729681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0971e61c9095bbce0800000000000000
+      internalID: -1388418161678870640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37debde95cc74f340800000000000000
+      internalID: 4896675883074186611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fcb692d86a973570800000000000000
+      internalID: 8446389401157025017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e678c826e5ba08290800000000000000
+      internalID: -7890118125284456594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a75af1415acf4360800000000000000
+      internalID: 7156160783263094696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec62c26c762ee870800000000000000
+      internalID: 8713944644683197676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4587e56e81d99a0800000000000000
+      internalID: -6224791732249668411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b04c690185cf73d0800000000000000
+      internalID: -3206627251664961358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40450f2394de4550800000000000000
+      internalID: 6147084270021460044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ae848b8517e53f0800000000000000
+      internalID: -910165448819414381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b29253c612f3d80800000000000000
+      internalID: -8268853642196866188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee6452206efecb20800000000000000
+      internalID: 3156740077679570663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d07ecdda22a9f10800000000000000
+      internalID: 2277170691720023388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4673c7da5b8846480800000000000000
+      internalID: -8906843849150941340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233121a84921d7de0800000000000000
+      internalID: -1333889485450898638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_16
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b13899ca0ee5e20800000000000000
+      internalID: 3341355005469989733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97ea0a4c100096f0800000000000000
+      internalID: -680043422231631972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d868599e6f327d00800000000000000
+      internalID: 968906614089738451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af1073b5e121e220800000000000000
+      internalID: 2513327337491144615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f516e83f39057a1a0800000000000000
+      internalID: -6798376516115865249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ca0e10f830c6350800000000000000
+      internalID: 6011183515379477526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f825e322a7f12050800000000000000
+      internalID: 5774168473024669938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2287eb5b3f578b0800000000000000
+      internalID: -5154946236545490227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e94764b0810529e0800000000000000
+      internalID: -1646908436439938592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9a682636d99f290800000000000000
+      internalID: -7856075024790804057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c0e7e1703eac5e0800000000000000
+      internalID: -1888447474012648364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d41578ab2c5c7940800000000000000
+      internalID: 5295208604460455126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb504e2a032f9f280800000000000000
+      internalID: -9008903288872761925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23d149a35a934b10800000000000000
+      internalID: 1964583546576294703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0129f08bec190100800000000000000
+      internalID: 74622666635026699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e3d06e0f857dfd0800000000000000
+      internalID: -2317285691583807998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b229a28aa6de8fb0800000000000000
+      internalID: -4643538137947495752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4204f5016913f440800000000000000
+      internalID: 4968342718422188623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_34
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136b23656861a5330800000000000000
+      internalID: 3700294810065876529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD_chain_armor_helmet_35
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f79f23a70b83dd60800000000000000
+      internalID: 7913821835138930678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ca7ae1861f2110f4ea1a19147ade0d5a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
