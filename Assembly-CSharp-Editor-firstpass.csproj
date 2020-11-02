@@ -67,35 +67,8 @@
     <Compile Include="Assets\Plugins\GitHub\Editor\ExtensionLoader.cs" />
     <None Include="Assets\Plugins\GitHub\Editor\credits.txt" />
     <None Include="Assets\Plugins\GitHub\Editor\eula.txt" />
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -300,6 +273,9 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Assets/Plugins/GitHub/Editor/Mono.Posix.dll</HintPath>
     </Reference>
     <Reference Include="GitHub.Logging">
       <HintPath>/Users/sherozeajmal/Documents/GitHub/CMPT-306_Group-13-Project/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
