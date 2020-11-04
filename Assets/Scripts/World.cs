@@ -32,6 +32,7 @@ public class World : MonoBehaviour
         return world;
     }
 
+    //Returns the name of a node at position p
     public static int findNodeNameAtPosition(Vector3 p)
     {
         return world[(int)p.x, (int)p.y].nodeName;

@@ -41,7 +41,6 @@ public class EnemyAI : Player
      * openList: list of probable nodes that will lead to the shortest path (we haven't searched through these nodes, yet)
      * closeList: list of nodes that we have already looked at
      */
-
     public List<Node> findPath(Node[,] maze, Node startNode, Node endNode)
     {
         List<Node> openList = new List<Node>();
@@ -270,7 +269,7 @@ public class EnemyAI : Player
         return false;
     }
 
-    //Purpose: Attacks either the player or the tower based on a heuristic and intelligence
+    //Purpose: Attacks either the player or the tower based on a heuristic
     private void attackTarget()
     {
         Vector2 playerPos = new Vector2(player.transform.position.x, player.transform.position.y);
@@ -295,7 +294,7 @@ public class EnemyAI : Player
     private void Start()
     {
         worldDimension = World.worldHeight;
-        Invoke("attackTarget", 2);
+        Invoke("attackTarget", 1);
     }
     
 
