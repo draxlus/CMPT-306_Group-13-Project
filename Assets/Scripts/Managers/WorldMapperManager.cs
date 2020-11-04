@@ -24,6 +24,28 @@ public class WorldMapperManager : MonoBehaviour
         createGrid();
     }
 
+    //void createGrid()
+    //{
+    //    grid = new Node[gridSizeX][];
+
+
+    //    Vector3 worldBottomLeft = transform.position - Vector3.right * gridWorldSize.x / 2 - Vector3.up * gridWorldSize.y / 2;
+
+    //    for(int x = 0; x < gridSizeX; x++)
+    //    {
+    //        for(int y = 0; y < gridSizeY; y++)
+    //        {
+    //            name++;
+    //            Vector3 worldPoint = worldBottomLeft + Vector3.right * (x * nodeDiameter + nodeRadius) + Vector3.up * (y * nodeDiameter + nodeRadius);
+    //            bool walkable = !(Physics.CheckSphere(worldPoint, nodeRadius, isObstacleMask));
+    //            Node n = new Node((int)worldPoint.x, (int)worldPoint.y, name, walkable);
+    //            n.height = (int)worldPoint.z;
+    //            grid[x][y]= n;
+
+    //        }
+    //    }
+    //}
+
     void createGrid()
     {
         grid = new Node[gridSizeX][];
@@ -31,21 +53,20 @@ public class WorldMapperManager : MonoBehaviour
 
         Vector3 worldBottomLeft = transform.position - Vector3.right * gridWorldSize.x / 2 - Vector3.up * gridWorldSize.y / 2;
 
-        for(int x = 0; x < gridSizeX; x++)
+        for (int x = 0; x < gridSizeX; x++)
         {
-            for(int y = 0; y < gridSizeY; y++)
+            for (int y = 0; y < gridSizeY; y++)
             {
                 name++;
                 Vector3 worldPoint = worldBottomLeft + Vector3.right * (x * nodeDiameter + nodeRadius) + Vector3.up * (y * nodeDiameter + nodeRadius);
                 bool walkable = !(Physics.CheckSphere(worldPoint, nodeRadius, isObstacleMask));
                 Node n = new Node((int)worldPoint.x, (int)worldPoint.y, name, walkable);
                 n.height = (int)worldPoint.z;
-                grid[x][y]= n;
+                grid[x][y] = n;
 
             }
         }
     }
-
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(gridWorldSize.x, gridWorldSize.y, 1));
@@ -62,6 +83,10 @@ public class WorldMapperManager : MonoBehaviour
         }
     }
 
+    public int findNameOf(Player g)
+    {
+        return 0;
+    }
 
 
 }

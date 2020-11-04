@@ -12,15 +12,7 @@ public class Node :IComparable
     public bool isObstacle;
 
 
-    //public Node(Node _parent, int _xPos, int _yPos, int _name)
-    //{
-    //    isObstacle = false;
-    //    parent = _parent;
-    //    row = _xPos;
-    //    col = _yPos;
-    //    nodeName = _name;
-
-    //}
+    
     public Node(int _xPos, int _yPos, int _name, bool _isObstacle)
     {
         isObstacle = _isObstacle;
@@ -34,6 +26,7 @@ public class Node :IComparable
     {
 
     }
+   
 
     public int getfCost()
     {
