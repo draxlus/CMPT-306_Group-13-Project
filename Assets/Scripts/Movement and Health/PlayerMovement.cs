@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public Rigidbody2D rb;
     private Vector2 moveDirection;
-    private Animator animator;
+    public Animator animator;
     private float health;
     
     [SerializeField] private PlayerHealthBar healthBar;
