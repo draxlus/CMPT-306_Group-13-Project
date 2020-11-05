@@ -5471,7 +5471,7 @@ GameObject:
   - component: {fileID: 8012374304582195824}
   - component: {fileID: 8012374304582195825}
   m_Layer: 5
-  m_Name: SheildSlot
+  m_Name: SpearSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5613,6 +5613,7 @@ MonoBehaviour:
   - {fileID: 8012374304582195825}
   - {fileID: 8012374304889266971}
   - {fileID: 8012374305894515300}
+  animator: {fileID: 0}
 --- !u!1 &8012374304700492624
 GameObject:
   m_ObjectHideFlags: 0
@@ -6297,7 +6298,7 @@ GameObject:
   - component: {fileID: 8012374305190602422}
   - component: {fileID: 8012374305190602423}
   m_Layer: 5
-  m_Name: WeaponSlot
+  m_Name: SwordSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8315,7 +8316,7 @@ GameObject:
   - component: {fileID: 8012374305959670909}
   - component: {fileID: 8012374305959670910}
   m_Layer: 5
-  m_Name: AccessorySlot
+  m_Name: SheildSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8533,7 +8534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryGameObject: {fileID: 8012374305700653865}
-  toggleInventoryKeys: 6900000063000000
+  toggleInventoryKey: 0
 --- !u!1 &8012374306106552021
 GameObject:
   m_ObjectHideFlags: 0

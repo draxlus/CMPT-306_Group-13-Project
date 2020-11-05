@@ -55,21 +55,43 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Inventory\ItemTooltip.cs" />
     <Compile Include="Assets\Scripts\AI\EnemyFollow.cs" />
+    <Compile Include="Assets\Scripts\Crafting\CraftingRecipeUI.cs" />
+    <Compile Include="Assets\Scripts\Inventory\ItemContainer.cs" />
+    <Compile Include="Assets\Scripts\Inventory\QuestionDialog.cs" />
     <Compile Include="Assets\resorce\swamppoint.cs" />
     <Compile Include="Assets\placeswp.cs" />
+    <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\AI\PathFinder.cs" />
     <Compile Include="Assets\placeobj.cs" />
+    <Compile Include="Assets\Scripts\Inventory\EquipmentSlot.cs" />
+    <Compile Include="Assets\Scripts\Crafting\CraftingRecipe.cs" />
+    <Compile Include="Assets\Scripts\Inventory\StatsPanel.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemSlot.cs" />
     <Compile Include="Assets\Scripts\Movement and Health\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseItemSlot.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemChest.cs" />
+    <Compile Include="Assets\Scripts\Inventory\StatModifier.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
     <Compile Include="Assets\resorce\corestate.cs" />
+    <Compile Include="Assets\Scripts\Inventory\CharacterStats.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Character.cs" />
+    <Compile Include="Assets\Scripts\Items\EquippableItem.cs" />
+    <Compile Include="Assets\Scripts\Inventory\EquipmentPanel.cs" />
     <Compile Include="Assets\mapgenerate.cs" />
+    <Compile Include="Assets\Scripts\Inventory\StatDisplay.cs" />
+    <Compile Include="Assets\Scripts\Crafting\CraftingWindow.cs" />
     <Compile Include="Assets\Scripts\Movement and Health\PlayerHealthBar.cs" />
     <Compile Include="Assets\resorce\treestate.cs" />
     <Compile Include="Assets\Scripts\Movement and Health\CameraMovement.cs" />
     <Compile Include="Assets\resorce\stonestate.cs" />
+    <Compile Include="Assets\Scripts\Inventory\DropItemArea.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\AI\Node.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventoryInput.cs" />
     <Compile Include="Assets\Scripts\Managers\WorldMapperManager.cs" />
+    <Compile Include="Assets\Scripts\Inventory\IItemContainer.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
