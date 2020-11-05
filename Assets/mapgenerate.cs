@@ -59,7 +59,9 @@ public class mapgenerate : MonoBehaviour
         swppoints = placeswp.swppoints(width / 2, height / 2);
         foreach (Vector3 point in swppoints)
         {
+           // int rand = Random.Range(0, outside.Length);
             Instantiate(swamppoint, point, Quaternion.identity);
+            //Instantiate(outside[rand], point, Quaternion.identity);
 
         }
 
