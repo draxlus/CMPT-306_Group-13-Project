@@ -5,11 +5,11 @@ using UnityEngine;
 public class stonestate : MonoBehaviour
 {
 
-    public int health;
+    private float health;
     // Start is called before the first frame update
     void Start()
     {
-        health = 100;
+        health = 50;
     }
 
     // Update is called once per frame
