@@ -37,17 +37,17 @@ public class ItemTooltip : MonoBehaviour
 
     private void AddStat(float value, string statName, bool isPercent = false)
     {
-        if (value != 0) 
+        if (value != 0)
         {
             if (sb.Length > 0)
                 sb.AppendLine();
-            
+
             if (value > 0)
                 sb.Append("+");
 
             if (isPercent)
             {
-                sb.Append(value*100);
+                sb.Append(value * 100);
                 sb.Append("% ");
             }
             else
@@ -60,6 +60,6 @@ public class ItemTooltip : MonoBehaviour
 
             sb.Append(statName);
         }
-        
+
     }
 }

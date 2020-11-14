@@ -68,10 +68,15 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
     }
 
-    private void OnTriggerEnter2D(Collider2D collider){
-        if (health > 0){
-            health -= .25f;
-            healthBar.SetSize(health);
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("Enemy"))
+        {
+            if (health > 0)
+            {
+                health -= .25f;
+                healthBar.SetSize(health);
+            }
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class treestate : MonoBehaviour
+public class treestate : ItemChest
 {
 
     private float health;

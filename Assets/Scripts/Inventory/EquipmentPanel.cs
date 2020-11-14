@@ -1,80 +1,65 @@
 ﻿using System;
-using System.ComponentModel;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EquipmentPanel : MonoBehaviour
 {
-    [SerializeField] Transform equipmentSlotsPanel;
-    [SerializeField] EquipmentSlot[] equipmentSlots;
-    [SerializeField] Animator animator;
+	public EquipmentSlot[] EquipmentSlots;
+	[SerializeField] Transform equipmentSlotsParent;
 
-    public event Action<BaseItemSlot> OnPointerEnterEvent;
-    public event Action<BaseItemSlot> OnPointerExitEvent;
-    public event Action<BaseItemSlot> OnRightClickEvent;
-    public event Action<BaseItemSlot> OnBeginDragEvent;
-    public event Action<BaseItemSlot> OnEndDragEvent;
-    public event Action<BaseItemSlot> OnDragEvent;
-    public event Action<BaseItemSlot> OnDropEvent;
+	public event Action<BaseItemSlot> OnPointerEnterEvent;
+	public event Action<BaseItemSlot> OnPointerExitEvent;
+	public event Action<BaseItemSlot> OnRightClickEvent;
+	public event Action<BaseItemSlot> OnBeginDragEvent;
+	public event Action<BaseItemSlot> OnEndDragEvent;
+	public event Action<BaseItemSlot> OnDragEvent;
+	public event Action<BaseItemSlot> OnDropEvent;
 
-    private void Start()
-    {
-        for (int i = 0; i < equipmentSlots.Length; i++)
-        {
-            equipmentSlots[i].OnPointerEnterEvent += OnPointerEnterEvent;
-            equipmentSlots[i].OnPointerExitEvent += OnPointerExitEvent;
-            equipmentSlots[i].OnRightClickEvent += OnRightClickEvent;
-            equipmentSlots[i].OnBeginDragEvent += OnBeginDragEvent;
-            equipmentSlots[i].OnEndDragEvent += OnEndDragEvent;
-            equipmentSlots[i].OnDragEvent += OnDragEvent;
-            equipmentSlots[i].OnDropEvent += OnDropEvent;
-        }
-    }
+	private void Start()
+	{
+		for (int i = 0; i < EquipmentSlots.Length; i++)
+		{
+			EquipmentSlots[i].OnPointerEnterEvent += slot => OnPointerEnterEvent(slot);
+			EquipmentSlots[i].OnPointerExitEvent += slot => OnPointerExitEvent(slot);
+			EquipmentSlots[i].OnRightClickEvent += slot => OnRightClickEvent(slot);
+			EquipmentSlots[i].OnBeginDragEvent += slot => OnBeginDragEvent(slot);
+			EquipmentSlots[i].OnEndDragEvent += slot => OnEndDragEvent(slot);
+			EquipmentSlots[i].OnDragEvent += slot => OnDragEvent(slot);
+			EquipmentSlots[i].OnDropEvent += slot => OnDropEvent(slot);
+		}
+	}
 
-    private void OnValidate()
-    {
-        equipmentSlots = equipmentSlotsPanel.GetComponentsInChildren<EquipmentSlot>();
-    }
+	private void OnValidate()
+	{
+		EquipmentSlots = equipmentSlotsParent.GetComponentsInChildren<EquipmentSlot>();
+	}
 
-    public bool AddItem(EquippableItem item, out EquippableItem previousItem)
-    {
-        for (int i = 0; i < equipmentSlots.Length; i++)
-        {
-            if (equipmentSlots[i].EquipmentType == item.EquipmentType)
-            {
-                previousItem = (EquippableItem)equipmentSlots[i].Item;
-                equipmentSlots[i].Item = item;
-                if (item.EquipmentType == EquipmentType.Sword)
-                {
-                    animator.SetBool("sword", true);
-                    animator.SetBool("spear", false);
-                    return true;
-                }
-                else if (item.EquipmentType == EquipmentType.Spear)
-                {
-                    animator.SetBool("spear", true);
-                    animator.SetBool("sword", false);
-                    return true;
-                }
-                else
-                    return true;
-            }
-        }
-        previousItem = null;
-        return false;
-    }
+	public bool AddItem(EquippableItem item, out EquippableItem previousItem)
+	{
+		for (int i = 0; i < EquipmentSlots.Length; i++)
+		{
+			if (EquipmentSlots[i].EquipmentType == item.EquipmentType)
+			{
+				previousItem = (EquippableItem)EquipmentSlots[i].Item;
+				EquipmentSlots[i].Item = item;
+				EquipmentSlots[i].Amount = 1;
+				return true;
+			}
+		}
+		previousItem = null;
+		return false;
+	}
 
-
-    public bool RemoveItem(EquippableItem item)
-    {
-        for (int i = 0; i < equipmentSlots.Length; i++)
-        {
-            if (equipmentSlots[i].Item == item)
-            {
-                equipmentSlots[i].Item = null;
-                return true;
-            }
-        }
-        return false;
-    }
+	public bool RemoveItem(EquippableItem item)
+	{
+		for (int i = 0; i < EquipmentSlots.Length; i++)
+		{
+			if (EquipmentSlots[i].Item == item)
+			{
+				EquipmentSlots[i].Item = null;
+				EquipmentSlots[i].Amount = 0;
+				return true;
+			}
+		}
+		return false;
+	}
 }

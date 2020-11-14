@@ -1,56 +1,51 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ItemChest : MonoBehaviour
 {
-    [SerializeField] Item item;
-    [SerializeField] int Amount = 1;
-    [SerializeField] Inventory inventory;
-    [SerializeField] KeyCode itemPickupKey = KeyCode.E;
+	[SerializeField] Item item;
+	[SerializeField] Inventory inventory;
+	[SerializeField] KeyCode itemPickupKeyCode = KeyCode.E;
 
-    private bool IsInRange;
-    private bool IsEmpty;
+	public bool isInRange;
+	private bool isEmpty = false;
+		
 
-    private void Update()
+    private void OnValidate()
     {
-        if (IsInRange && IsEmpty && Input.GetKeyDown(itemPickupKey))
-        {
-            Item itemCopy = item.GetCopy();
-            if (inventory.AddItem(itemCopy))
-            {
-                Amount--;
-                if (Amount == 0)
-                    IsEmpty = true;
-            }
-            else
-            {
-                itemCopy.Destroy();
-            }
-        }
-    }
+		if (inventory == null)
+			inventory = FindObjectOfType<Inventory>();
+	}
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-             IsInRange = true;
-    }
+	private void Update()
+	{
+		if (isInRange && !isEmpty && Input.GetKeyDown(itemPickupKeyCode))
+		{
+			bool pickUp = inventory.AddItem(item);
+			if (pickUp)
+			{
+				isEmpty = true;
+				Debug.Log("Added Item");
+			}
+		}
+	}
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-            IsInRange = false;
-    }
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		CheckCollision(collision.gameObject, true);
+		Debug.Log("Player in range");
+	}
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-            IsInRange = true;
-    }
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		CheckCollision(collision.gameObject, false);
+		Debug.Log("Player left range");
+	}
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-            IsInRange = false;
-    }
+	private void CheckCollision(GameObject gameObject, bool state)
+	{
+		if (gameObject.CompareTag("Player"))
+		{
+			isInRange = state;
+		}
+	}
 }

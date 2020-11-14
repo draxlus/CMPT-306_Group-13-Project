@@ -97,6 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d07eeedd87c9d9741b41a85885de4592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: c8c0b30e60b15c84bb7a27608eb73271, type: 2}
+  amount: 1
+  inventory: {fileID: 0}
+  itemPickupKeyCode: 101
 --- !u!61 &-3687228693262368688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -107,7 +111,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -1.2832136}

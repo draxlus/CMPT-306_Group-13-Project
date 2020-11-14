@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class stonestate : MonoBehaviour
+public class stonestate : ItemChest
 {
 
     private float health;

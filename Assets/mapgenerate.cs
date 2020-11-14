@@ -18,6 +18,8 @@ public class mapgenerate : MonoBehaviour
     /* corel less than 0 */
     public int corer;
 
+    int count;
+
     public int roadwidth;
 
     public List<Vector3> objpoints;
@@ -26,6 +28,8 @@ public class mapgenerate : MonoBehaviour
     public GameObject[] outside;
 
     public GameObject swamppoint, core;
+
+    public GameObject[] clones;
 
     [Range(0, 100)]
     public int fillpersent;
@@ -39,21 +43,31 @@ public class mapgenerate : MonoBehaviour
     }
 
     // Update is called once per frame
+    
     void Update()
     {
-
+        for (int i = 0; i < clones.Length; i++)
+        {
+            if (Input.GetKeyDown(KeyCode.E) && clones[i].GetComponent<ItemChest>().isInRange)
+            {
+                clones[i].gameObject.SetActive(false);
+            }
+        }
     }
+
+
     void generateoutside()
     {
-
+        clones = new GameObject[1000];
 
         objpoints = placeobj.objpoints(height/2, -(height/2), -(width/2), width/2, fillpersent, coret, coreb, corel, corer, roadwidth);
 
+        count = 0;
         foreach (Vector3 point in objpoints)
         {
             int rand = Random.Range(0, outside.Length);
-            Instantiate(outside[rand], point, Quaternion.identity);
-           
+            clones[count] = Instantiate(outside[rand], point, Quaternion.identity);
+            count++;
         }
 
         swppoints = placeswp.swppoints(width / 2, height / 2);
