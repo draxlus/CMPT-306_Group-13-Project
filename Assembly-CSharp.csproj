@@ -55,10 +55,12 @@
      <Compile Include="Assets\Scripts\Items\BaseItemSlot.cs" />
      <Compile Include="Assets\Scripts\Items\ItemChest.cs" />
      <Compile Include="Assets\Scripts\Inventory\StatModifier.cs" />
+     <Compile Include="Assets\Scripts\Health_bars\TreeHealthBar.cs" />
      <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
      <Compile Include="Assets\resorce\corestate.cs" />
      <Compile Include="Assets\Scripts\Inventory\CharacterStats.cs" />
      <Compile Include="Assets\Scripts\Inventory\Character.cs" />
+     <Compile Include="Assets\Scripts\Health_bars\StoneHealthBar.cs" />
      <Compile Include="Assets\Scripts\Items\EquippableItem.cs" />
      <Compile Include="Assets\Scripts\Inventory\EquipmentPanel.cs" />
      <Compile Include="Assets\mapgenerate.cs" />
@@ -74,8 +76,7 @@
      <Compile Include="Assets\Scripts\Inventory\InventoryInput.cs" />
      <Compile Include="Assets\Scripts\Managers\WorldMapperManager.cs" />
      <Compile Include="Assets\Scripts\Inventory\IItemContainer.cs" />
-     <Compile Include="Assets\Scripts\Health_bars\TreeHealthBar.cs" />
-     <Compile Include="Assets\Scripts\Health_bars\StoneHealthBar.cs" />
+     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -631,18 +632,6 @@
     <Reference Include="System.Xml.XPath.XDocument">
         <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-        <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-        <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
         <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
@@ -670,6 +659,9 @@
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
         <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Searcher.Editor">
         <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
     </Reference>
@@ -682,6 +674,12 @@
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
         <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
@@ -693,6 +691,9 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>E:/Unity/Unity_Projects/CMPT-306_Group-13-Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
