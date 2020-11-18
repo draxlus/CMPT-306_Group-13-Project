@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/AI/EnemyFollow.cs" />
+    <Compile Include="Assets/Scripts/MobGenerationManager.cs" />
     <Compile Include="Assets/Scripts/Movement and Health/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/UI/MainMenu.cs" />
     <Compile Include="Assets/Scripts/AI/World.cs" />
@@ -66,6 +67,8 @@
     <Compile Include="Assets/Scripts/Tower.cs" />
     <Compile Include="Assets/Scripts/AI/Node.cs" />
     <Compile Include="Assets/Scripts/Managers/WorldMapperManager.cs" />
+    <Compile Include="Assets/Scripts/Enemy.cs" />
+    <Compile Include="Assets/Scripts/LootDrop.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

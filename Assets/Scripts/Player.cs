@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int health;
+    public static int health;
 
+    private void Update()
+    {
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+            //stop the game
+            Time.timeScale = 0;
+        }
+    }
 
 }
