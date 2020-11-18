@@ -32,7 +32,7 @@ public class EquippableItem : Item
 
     public override void Destroy()
     {
-        Destroy(this);
+        DestroyImmediate(this);
     }
 
     public void Equip(Character c)

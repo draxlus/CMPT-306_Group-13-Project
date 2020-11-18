@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7453851806713588192}
+  - component: {fileID: 8418449453773082628}
   - component: {fileID: 7405475693165622991}
-  - component: {fileID: 745665296041227566}
   - component: {fileID: -3687228693262368688}
   m_Layer: 0
   m_Name: stone
@@ -34,6 +34,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8418449453773082628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852276500515020704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb02d75759aa32644882c8d97a032f55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: c8c0b30e60b15c84bb7a27608eb73271, type: 2}
+  Inventory: {fileID: 0}
+  itemPickupKeyCode: 101
+  isInRange: 0
+  isEmpty: 0
 --- !u!212 &7405475693165622991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85,22 +102,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &745665296041227566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1852276500515020704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d07eeedd87c9d9741b41a85885de4592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c8c0b30e60b15c84bb7a27608eb73271, type: 2}
-  amount: 1
-  inventory: {fileID: 0}
-  itemPickupKeyCode: 101
 --- !u!61 &-3687228693262368688
 BoxCollider2D:
   m_ObjectHideFlags: 0

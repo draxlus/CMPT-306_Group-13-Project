@@ -2,29 +2,47 @@
 
 public class ItemChest : MonoBehaviour
 {
-	[SerializeField] Item item;
-	[SerializeField] Inventory inventory;
+	[SerializeField] public Item item;
+	[SerializeField] float amount;
+	[SerializeField] Inventory Inventory;
 	[SerializeField] KeyCode itemPickupKeyCode = KeyCode.E;
+	[SerializeField] ObjectHealthBar healthBar;
 
 	public bool isInRange;
-	private bool isEmpty = false;
-		
+	public bool isEmpty = false;
+	private float health;
 
-    private void OnValidate()
+	private void Awake()
     {
-		if (inventory == null)
-			inventory = FindObjectOfType<Inventory>();
+		if (Inventory == null)
+			Inventory = FindObjectOfType<Inventory>();
 	}
 
-	private void Update()
+    private void Start()
+    {
+		health = 1f;
+		healthBar.SetSize(health);
+	}
+
+    private void Update()
 	{
 		if (isInRange && !isEmpty && Input.GetKeyDown(itemPickupKeyCode))
 		{
-			bool pickUp = inventory.AddItem(item);
-			if (pickUp)
+            bool added = Inventory.AddItem(item);
+			amount--;
+			
+
+            if (health > 0)
+            {
+				health -= .5f ;
+				healthBar.SetSize(health);
+			}
+
+			if (added & amount == 0)
 			{
 				isEmpty = true;
 				Debug.Log("Added Item");
+				this.gameObject.SetActive(false);
 			}
 		}
 	}
@@ -32,13 +50,16 @@ public class ItemChest : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		CheckCollision(collision.gameObject, true);
-		Debug.Log("Player in range");
+        if (collision.gameObject.CompareTag("Player"))
+		{
+			healthBar.gameObject.SetActive(true);
+		}
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
 		CheckCollision(collision.gameObject, false);
-		Debug.Log("Player left range");
+		healthBar.gameObject.SetActive(false);
 	}
 
 	private void CheckCollision(GameObject gameObject, bool state)

@@ -28,7 +28,8 @@ public class mapgenerate : MonoBehaviour
     public GameObject[] outside;
 
     public GameObject swamppoint, core;
-
+    
+    public Inventory inventory;
     public GameObject[] clones;
 
     [Range(0, 100)]
@@ -46,13 +47,6 @@ public class mapgenerate : MonoBehaviour
     
     void Update()
     {
-        for (int i = 0; i < clones.Length; i++)
-        {
-            if (Input.GetKeyDown(KeyCode.E) && clones[i].GetComponent<ItemChest>().isInRange)
-            {
-                clones[i].gameObject.SetActive(false);
-            }
-        }
     }
 
 
