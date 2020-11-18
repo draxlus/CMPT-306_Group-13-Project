@@ -32,6 +32,7 @@ public class EnemyAI : Player
         Medium,
         High
     };
+    
 
     //A* implementation
     //Explaination:
@@ -58,7 +59,11 @@ public class EnemyAI : Player
         //Keep searching until the open list is empty
         while (openList.Count > 0)
         {
+            
+
+            
             openList.Sort();//sort the list in terms of increasing f cost
+           
             Node currentNode = openList[0];
             if (debugModeOn)
             {
@@ -146,7 +151,7 @@ public class EnemyAI : Player
                             }
 
                             //g-Cost = 14 if childnode is diagonally away from the current node
-                            if((childNode.row == currentNode.row -1 || childNode.row == currentNode.row + 1) && (childNode.col == currentNode.col -1 || childNode.col == currentNode.col + 1))
+                            if ((childNode.row == currentNode.row - 1 || childNode.row == currentNode.row + 1) && (childNode.col == currentNode.col - 1 || childNode.col == currentNode.col + 1))
                             {
                                 //Calculate the g-cost for the childnode
                                 distanceBetweenChildAndCurrentNode = 14;
@@ -158,6 +163,9 @@ public class EnemyAI : Player
                                 distanceBetweenChildAndCurrentNode = 10;
                                 childNode.gCost = currentNode.gCost + distanceBetweenChildAndCurrentNode;
                             }
+                            ////Calculate the g-cost for the childnode
+                            //distanceBetweenChildAndCurrentNode = 10;
+                            //childNode.gCost = currentNode.gCost + distanceBetweenChildAndCurrentNode;
 
                             //Calculate the h cost for the childNode
                             int hCostSquared = Mathf.RoundToInt(Mathf.Pow(endNode.col - childNode.col, 2) + Mathf.Pow(endNode.row - childNode.row, 2));
@@ -183,20 +191,22 @@ public class EnemyAI : Player
                                     {
                                         if (debugModeOn)
                                         {
-                                            print("Node " + n.nodeName + " old gCost " + n.gCost + " new gCost " + childNode.gCost);
-                                            print("old g cost " + n.gCost + " old h cost " + n.hCost + "old fcost "+n.getfCost());
+                                            print("Node " + n.nodeName + " old fCost " + n.getfCost() + " new fCost " + childNode.getfCost());
+                                            //print("old g cost " + n.gCost + " old h cost " + n.hCost + "old fcost "+n.getfCost());
                                         }
-                                        if (childNode.gCost > n.gCost)
+                                        if (childNode.getfCost() >= n.getfCost())
                                         {
-                                            //go to the top of the for loop, because the current g cost is higher than what is already in the open list
+                                            //go to the top of the for loop, because the current f cost is higher than what is already in the open list
                                             if (debugModeOn)
                                             {
-                                                print("Childnode " + childNode.nodeName + " was found in the open list with a high g cost");
+                                                print("Childnode " + childNode.nodeName + " was found in the open list with a low f cost");
 
                                             }
                                             continue;
 
                                         }
+
+                                        
                                         
                                         
                                     }
@@ -269,35 +279,39 @@ public class EnemyAI : Player
         return false;
     }
 
-    //Purpose: Attacks either the player or the tower based on a heuristic
-    private void attackTarget()
+    ////Purpose: Attacks either the player or the tower based on a heuristic
+    //private void attackTarget()
+    //{
+    //    Vector2 playerPos = new Vector2(player.transform.position.x, player.transform.position.y);
+    //    Vector2 towerPos = new Vector2(tower.transform.position.x, tower.transform.position.y);
+    //    Node enemyNode = new Node((int)transform.position.x, (int)transform.position.y, World.findNodeNameAtPosition(transform.position), false);
+
+    //    if (player.health > tower.health)
+    //    {
+    //        //Attack the tower
+    //        Node tower = new Node((int)towerPos.x, (int)towerPos.y, World.findNodeNameAtPosition(towerPos), false);
+    //        findPath(World.worldToMarix(), enemyNode, tower);
+    //        print("Attacking tower");
+    //    }
+    //    else
+    //    {
+    //        Node tower = new Node((int)playerPos.x, (int)playerPos.y, World.findNodeNameAtPosition(playerPos), false);
+    //        print("Attacking player");
+
+    //    }
+    //}
+
+    //private void Start()
+    //{
+    //    worldDimension = World.worldHeight;
+    //    Invoke("attackTarget", 1);
+    //}
+
+    public EnemyAI(int wd)
     {
-        Vector2 playerPos = new Vector2(player.transform.position.x, player.transform.position.y);
-        Vector2 towerPos = new Vector2(tower.transform.position.x, tower.transform.position.y);
-        Node enemyNode = new Node((int)transform.position.x, (int)transform.position.y, World.findNodeNameAtPosition(transform.position), false);
-
-        if (player.health > tower.health)
-        {
-            //Attack the tower
-            Node tower = new Node((int)towerPos.x, (int)towerPos.y, World.findNodeNameAtPosition(towerPos), false);
-            findPath(World.worldToMarix(), enemyNode, tower);
-            print("Attacking tower");
-        }
-        else
-        {
-            Node tower = new Node((int)playerPos.x, (int)playerPos.y, World.findNodeNameAtPosition(playerPos), false);
-            print("Attacking player");
-
-        }
+        worldDimension = wd;
     }
 
-    private void Start()
-    {
-        worldDimension = World.worldHeight;
-        Invoke("attackTarget", 1);
-    }
-    
-
-
+   
 
 }

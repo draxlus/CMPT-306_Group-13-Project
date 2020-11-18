@@ -58,6 +58,9 @@ public class Node :IComparable
         return this.nodeName.ToString();
     }
 
-    
+    public string nodeDescription()
+    {
+        return nodeName + " x:"+row+" col:"+col  + " isObstacle: " + isObstacle;  
+    }
 
 }
