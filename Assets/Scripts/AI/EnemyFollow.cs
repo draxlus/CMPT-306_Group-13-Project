@@ -14,6 +14,7 @@ public class EnemyFollow : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame

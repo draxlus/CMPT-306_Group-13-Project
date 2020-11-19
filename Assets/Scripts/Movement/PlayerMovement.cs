@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveDirection;
     public Animator animator;
     private float health;
+    private float time = 2f;
     
     [SerializeField] private PlayerHealthBar healthBar;
 
@@ -70,13 +71,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Enemy"))
+        if (collider.gameObject.CompareTag("Enemy") )
         {
-            if (health > 0)
+            if (health > 0 && time > 0)
             {
+                time -= Time.deltaTime;
                 health -= .25f;
                 healthBar.SetSize(health);
             }
         }
+        
+        time = 2f;
     }
 }

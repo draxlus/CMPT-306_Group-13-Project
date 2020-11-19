@@ -5,7 +5,6 @@ public class InventoryInput : MonoBehaviour
 {
     [SerializeField] GameObject inventoryGameObject;
     [SerializeField] KeyCode toggleInventoryKey;
-    [SerializeField] PauseManager pauseManager;
 
  
     void Update()
@@ -13,7 +12,6 @@ public class InventoryInput : MonoBehaviour
         if (Input.GetKeyDown(toggleInventoryKey))
         {
             inventoryGameObject.SetActive(!inventoryGameObject.activeSelf);
-            pauseManager.PauseGame();
         }
     }
 }

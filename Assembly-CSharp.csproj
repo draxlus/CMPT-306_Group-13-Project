@@ -61,7 +61,9 @@
     <Compile Include="Assets\Scripts\Crafting\CraftingRecipeUI.cs" />
     <Compile Include="Assets\Scripts\Items\ItemContainer.cs" />
     <Compile Include="Assets\Scripts\Inventory\QuestionDialog.cs" />
+    <Compile Include="Assets\Scripts\AI\EnemyAI.cs" />
     <Compile Include="Assets\resorce\swamppoint.cs" />
+    <Compile Include="Assets\Scripts\MobGenerationManager.cs" />
     <Compile Include="Assets\placeswp.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\AI\PathFinder.cs" />
@@ -71,29 +73,36 @@
     <Compile Include="Assets\Scripts\Inventory\StatsPanel.cs" />
     <Compile Include="Assets\Scripts\Items\ItemSlot.cs" />
     <Compile Include="Assets\Scripts\Movement\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Tower.cs" />
     <Compile Include="Assets\Scripts\Items\BaseItemSlot.cs" />
     <Compile Include="Assets\Scripts\Items\ItemChest.cs" />
     <Compile Include="Assets\Scripts\Inventory\StatModifier.cs" />
     <Compile Include="Assets\Scripts\Health_bars\ObjectHealthBar.cs" />
+    <Compile Include="Assets\Scripts\AI\World.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\resorce\corestate.cs" />
     <Compile Include="Assets\Scripts\Inventory\CharacterStats.cs" />
     <Compile Include="Assets\Scripts\Inventory\Character.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Health_bars\StoneHealthBar.cs" />
     <Compile Include="Assets\Scripts\Items\EquippableItem.cs" />
     <Compile Include="Assets\Scripts\Inventory\EquipmentPanel.cs" />
     <Compile Include="Assets\mapgenerate.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Inventory\StatDisplay.cs" />
     <Compile Include="Assets\Scripts\Crafting\CraftingWindow.cs" />
     <Compile Include="Assets\Scripts\Health_bars\PlayerHealthBar.cs" />
     <Compile Include="Assets\Scripts\Movement\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Inventory\DropItemArea.cs" />
+    <Compile Include="Assets\Scripts\LootDrop.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
-    <Compile Include="Assets\Scripts\Managers\PauseManager.cs" />
     <Compile Include="Assets\Scripts\AI\Node.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryInput.cs" />
     <Compile Include="Assets\Scripts\Managers\WorldMapperManager.cs" />
     <Compile Include="Assets\Scripts\Inventory\IItemContainer.cs" />
+    <Compile Include="Assets\Scripts\exp.cs" />
+    <Compile Include="Assets\Scripts\respawnresoures.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
