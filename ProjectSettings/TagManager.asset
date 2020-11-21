@@ -7,7 +7,7 @@ TagManager:
   - Enemy
   - Inventory
   - World
-  - Hits
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: Armour
     uniqueID: 2678199325
+    locked: 0
+  - name: Player
+    uniqueID: 92462443
     locked: 0

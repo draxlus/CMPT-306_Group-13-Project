@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum PlayerState{
+    idle,
     walk,
     attack,
-    interact
+    interact,
+    stagger
 }
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     private Vector3 change;
     private Animator animator;
+
+    public int hitCount = 0;
 
     
     [SerializeField] private PlayerHealthBar healthBar;
@@ -33,10 +37,10 @@ public class PlayerMovement : MonoBehaviour
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
         
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack){
+        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger){
             StartCoroutine(AttackCo());
         }
-        else if(currentState == PlayerState.walk){
+        else if(currentState == PlayerState.walk || currentState == PlayerState.idle){
             UpdateAnimationAndMove();
         }
     }
@@ -49,10 +53,12 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);
+            currentState = PlayerState.walk;
         }
         else
         {
             animator.SetBool("moving", false);
+            currentState = PlayerState.idle;
         }
 
     }
@@ -70,4 +76,19 @@ public class PlayerMovement : MonoBehaviour
         change.Normalize();
         rb.MovePosition(transform.position + change * moveSpeed * Time.deltaTime);
     }  
+
+    public void Knock(float knocktime){
+        StartCoroutine(KnockCo(knocktime));
+    }
+
+    private IEnumerator KnockCo(float knocktime){
+
+        if (rb != null){
+            yield return new WaitForSeconds(knocktime);
+            rb.velocity = Vector2.zero;
+            currentState = PlayerState.idle;
+            rb.velocity = Vector2.zero;
+            hitCount = 0;
+        }
+    }
 }

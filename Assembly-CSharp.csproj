@@ -40,6 +40,7 @@
      <Compile Include="Assets\DayNight.cs" />
      <Compile Include="Assets\Scripts\AI\EnemyFollow.cs" />
      <Compile Include="Assets\Scripts\Crafting\CraftingRecipeUI.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Items\ItemContainer.cs" />
      <Compile Include="Assets\Scripts\Inventory\QuestionDialog.cs" />
      <Compile Include="Assets\Scripts\AI\EnemyAI.cs" />
@@ -55,6 +56,7 @@
      <Compile Include="Assets\Scripts\exp.cs" />
      <Compile Include="Assets\Scripts\Items\ItemSlot.cs" />
      <Compile Include="Assets\Scripts\Movement\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Movement\Knockback.cs" />
      <Compile Include="Assets\Scripts\Tower.cs" />
      <Compile Include="Assets\Scripts\Items\BaseItemSlot.cs" />
      <Compile Include="Assets\Scripts\Items\ItemChest.cs" />
@@ -62,10 +64,11 @@
      <Compile Include="Assets\Scripts\Health_bars\ObjectHealthBar.cs" />
      <Compile Include="Assets\Scripts\AI\World.cs" />
      <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\AI\LogEnemyAI.cs" />
      <Compile Include="Assets\resorce\corestate.cs" />
      <Compile Include="Assets\Scripts\Inventory\CharacterStats.cs" />
      <Compile Include="Assets\Scripts\Inventory\Character.cs" />
-     <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\AI\Enemy.cs" />
      <Compile Include="Assets\Scripts\Health_bars\StoneHealthBar.cs" />
      <Compile Include="Assets\Scripts\Items\EquippableItem.cs" />
      <Compile Include="Assets\Scripts\Inventory\EquipmentPanel.cs" />

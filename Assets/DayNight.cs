@@ -38,6 +38,6 @@ public class DayNight : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(day);
+       
     }
 }
