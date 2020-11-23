@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     private Vector3 change;
     private Animator animator;
+    private float maxHealth;
+    public float health;
 
     public int hitCount = 0;
 
@@ -28,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
+        health = 10f;
+        maxHealth = health;
     }
 
     // Update is called once per frame
@@ -77,8 +81,17 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(transform.position + change * moveSpeed * Time.deltaTime);
     }  
 
-    public void Knock(float knocktime){
+    private void TakeDamage(float damage){
+        health -= damage;
+        healthBar.SetSize((health - (damage/maxHealth))/10);
+        if (health <= 0){
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    public void Knock(float knocktime, float damage){
         StartCoroutine(KnockCo(knocktime));
+        TakeDamage(damage);
     }
 
     private IEnumerator KnockCo(float knocktime){

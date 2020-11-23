@@ -6,6 +6,7 @@ public class Knockback : MonoBehaviour
 {
     public float strength;
     public float knockTime;
+    public float damage;
 
     //On attack test if the object being hit is an hit if it is a call is made to 
     //the enemies Knockable script to apply knockback to the hit
@@ -21,16 +22,15 @@ public class Knockback : MonoBehaviour
                     other.GetComponent<Enemy>().hitCount++;
                     if(other.GetComponent<Enemy>().hitCount == 1){
                         hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
-                        print("hit");
-                        other.GetComponent<Enemy>().Knock(hit, knockTime);
+                        other.GetComponent<Enemy>().Knock(hit, knockTime, damage);
                     }
-                        
+
                 }
                 if (other.gameObject.CompareTag("Player")){
                     other.GetComponent<PlayerMovement>().hitCount++;
                     if(other.GetComponent<PlayerMovement>().hitCount == 1){
                         hit.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
-                        other.GetComponent<PlayerMovement>().Knock(knockTime);
+                        other.GetComponent<PlayerMovement>().Knock(knockTime, damage);
                     }
                         
                 }

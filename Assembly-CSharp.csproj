@@ -86,6 +86,7 @@
      <Compile Include="Assets\Scripts\Inventory\InventoryInput.cs" />
      <Compile Include="Assets\Scripts\Managers\WorldMapperManager.cs" />
      <Compile Include="Assets\Scripts\Inventory\IItemContainer.cs" />
+     <Compile Include="Assets\Scripts\Scriptable Objects\FloatValue.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
