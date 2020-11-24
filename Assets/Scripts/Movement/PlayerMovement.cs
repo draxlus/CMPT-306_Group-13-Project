@@ -1,8 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public enum PlayerState{
+public enum PlayerState
+{
     idle,
     walk,
     attack,
@@ -16,18 +16,22 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     private Vector3 change;
     private Animator animator;
+    public bool isAttacking;
+
 
     public int hitCount = 0;
 
-    
+
     [SerializeField] private PlayerHealthBar healthBar;
 
-    void Start(){
-        currentState = PlayerState.walk;
+    void Start()
+    {
+        currentState = PlayerState.idle;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
+        
     }
 
     // Update is called once per frame
@@ -37,53 +41,70 @@ public class PlayerMovement : MonoBehaviour
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
         
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger){
+        if (Input.GetKeyDown(KeyCode.Space) && currentState != PlayerState.attack && currentState != PlayerState.stagger)
+        {
+            
             StartCoroutine(AttackCo());
+            
         }
-        else if(currentState == PlayerState.walk || currentState == PlayerState.idle){
+        else if (currentState == PlayerState.walk || currentState == PlayerState.idle)
+        {
             UpdateAnimationAndMove();
         }
     }
 
     void UpdateAnimationAndMove()
     {
-        if(change != Vector3.zero)
+        if (change != Vector3.zero)
         {
+            
             MoveCharacter();
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
-            animator.SetBool("moving", true);
             currentState = PlayerState.walk;
+
         }
         else
         {
-            animator.SetBool("moving", false);
+            animator.SetLayerWeight(1, 0);
             currentState = PlayerState.idle;
         }
 
     }
     private IEnumerator AttackCo()
     {
-        animator.SetBool("attacking", true);
+
+        animator.SetLayerWeight(2, 1);
+        isAttacking = true;
+        animator.SetBool("attacking", isAttacking);
         currentState = PlayerState.attack;
         yield return null;
-        animator.SetBool("attacking", false);
+
+        
+        isAttacking = false;
+        animator.SetBool("attacking", isAttacking);
         yield return new WaitForSeconds(.3f);
-        currentState = PlayerState.walk;
+        animator.SetLayerWeight(2, 0);
+        currentState = PlayerState.idle;
+        
     }
     void MoveCharacter()
     {
+        animator.SetLayerWeight(1, 1);
         change.Normalize();
         rb.MovePosition(transform.position + change * moveSpeed * Time.deltaTime);
-    }  
+    }
 
-    public void Knock(float knocktime){
+    public void Knock(float knocktime)
+    {
         StartCoroutine(KnockCo(knocktime));
     }
 
-    private IEnumerator KnockCo(float knocktime){
+    private IEnumerator KnockCo(float knocktime)
+    {
 
-        if (rb != null){
+        if (rb != null)
+        {
             yield return new WaitForSeconds(knocktime);
             rb.velocity = Vector2.zero;
             currentState = PlayerState.idle;

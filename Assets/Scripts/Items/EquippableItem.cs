@@ -4,13 +4,14 @@ public enum EquipmentType
 {
     Helmet,
     Armor,
-    Gloves,
+    Leggings,
     Boots,
     Sword,
     Spear,
     Sheild,
     Accessory
 }
+
 
 [CreateAssetMenu]
 public class EquippableItem : Item
@@ -24,6 +25,12 @@ public class EquippableItem : Item
     public float SpeedPercentBonus;
 
     public EquipmentType EquipmentType;
+
+
+    [SerializeField]
+    private GearSocket gearSocket;
+
+    public static object AnimationClips { get; internal set; }
 
     public override Item GetCopy()
     {
@@ -50,14 +57,24 @@ public class EquippableItem : Item
             c.Strength.AddModifier(new StatModifier(StrengthPercentBonus, StatModType.PercentMult, this));
         if (SpeedPercentBonus != 0)
             c.Strength.AddModifier(new StatModifier(SpeedPercentBonus, StatModType.PercentMult, this));
-
+        if (gearSocket != null)
+        {
+            gearSocket.Equip(c.AnimationClip);
+        }
         
     }
+
 
     public void Unequip(Character c)
     {
         c.Health.RemoveAllModifiersFromSource(this);
         c.Strength.RemoveAllModifiersFromSource(this);
         c.Speed.RemoveAllModifiersFromSource(this);
+        if (gearSocket != null)
+        {
+            gearSocket.Dequip();
+        }
     }
+    
 }
+

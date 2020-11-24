@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb021ccb720e441b5a22002dbd9520, type: 3}
   m_Name: Boots
   m_EditorClassIdentifier: 
+  id: bf258b68d791b2e45bffb9260d63a3ff
   ItemName: Boots
   Icon: {fileID: 21300000, guid: 0a855b99c81d4134d8f59ec1398a5ae6, type: 3}
+  MaximumStacks: 1
   HealthBonus: 0
   StrengthBonus: 0
   SpeedBonus: 5
@@ -21,3 +23,20 @@ MonoBehaviour:
   StrengthPercentBonus: 0
   SpeedPercentBonus: 0
   EquipmentType: 3
+  animationClips:
+  - {fileID: 7400000, guid: a0f8de6e1fc4fb847b31ffdc8198e535, type: 2}
+  - {fileID: 7400000, guid: da7f0f4cac513a64aad668b5fabfab5a, type: 2}
+  - {fileID: 7400000, guid: 06f1e62d300e9f74f8bac5c37498d28b, type: 2}
+  - {fileID: 7400000, guid: fa4b7d2fd58009148a7b5da79421fec2, type: 2}
+  - {fileID: 7400000, guid: 05fe0433135a7f447aabfce0ac55ac57, type: 2}
+  - {fileID: 7400000, guid: a32e253ec94439d46b4a6b8ea2272c89, type: 2}
+  - {fileID: 7400000, guid: b5c308bbfcf42be4baf51341ff9b8695, type: 2}
+  - {fileID: 7400000, guid: 67d9e3f9863602346928eb45c414c110, type: 2}
+  - {fileID: 7400000, guid: 32d23f67d1e6c6f4eae74f858b47155f, type: 2}
+  - {fileID: 7400000, guid: fd4c6e5bbc12193449d94859a59e84b5, type: 2}
+  - {fileID: 7400000, guid: 901898c690d8543478d492c817b551b8, type: 2}
+  - {fileID: 7400000, guid: 3613570cdfa83954e8b9352679e6a746, type: 2}
+  - {fileID: 7400000, guid: 9dbe5bc685ec25f449b12c0f01125c07, type: 2}
+  - {fileID: 7400000, guid: 9a0d355bc2828a74281ceadfecec8989, type: 2}
+  - {fileID: 7400000, guid: ccab4ddbe8086654788c8515d8f011f8, type: 2}
+  - {fileID: 7400000, guid: b07c8d762212e5242be61375c264d333, type: 2}

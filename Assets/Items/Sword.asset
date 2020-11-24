@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb021ccb720e441b5a22002dbd9520, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
+  id: 216c3ac79696fdc4b93611f08fbe4347
   ItemName: Sword
   Icon: {fileID: 21300000, guid: 1ff206b294988ca4c85a9512c6f8ffbb, type: 3}
+  MaximumStacks: 1
   HealthBonus: 0
   StrengthBonus: 5
   SpeedBonus: 0
@@ -21,3 +23,12 @@ MonoBehaviour:
   StrengthPercentBonus: 0
   SpeedPercentBonus: 0
   EquipmentType: 4
+  animationClips:
+  - {fileID: 7400000, guid: a65f9177d843d4841be8836b4f3fe3e9, type: 2}
+  - {fileID: 7400000, guid: f13e868f498c965428f99923e7f41ae6, type: 2}
+  - {fileID: 7400000, guid: 829b3ad3a5309d1428c49bdbd06c4f9b, type: 2}
+  - {fileID: 7400000, guid: 5197f37a30e7e1646a35e441831914b4, type: 2}
+  - {fileID: 7400000, guid: 568e210c69fda784cb2792fac552a1f3, type: 2}
+  - {fileID: 7400000, guid: 3a282f9a3f9946d48b9646b21c639005, type: 2}
+  - {fileID: 7400000, guid: 15c5b7c040c42de459a0668d8ab198d0, type: 2}
+  - {fileID: 7400000, guid: 7f13dab37465d4247a873f48467a3ac6, type: 2}

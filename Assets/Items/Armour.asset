@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb021ccb720e441b5a22002dbd9520, type: 3}
   m_Name: Armour
   m_EditorClassIdentifier: 
+  id: 832a5f57f9cddbf4ca1b22bba0303632
   ItemName: Armor
   Icon: {fileID: 21300000, guid: 6c9c239d11103c543895f45f08ed199c, type: 3}
+  MaximumStacks: 1
   HealthBonus: 10
   StrengthBonus: 2
   SpeedBonus: -2
@@ -21,3 +23,20 @@ MonoBehaviour:
   StrengthPercentBonus: 0
   SpeedPercentBonus: 0
   EquipmentType: 1
+  animationClips:
+  - {fileID: 7400000, guid: 033a7279776ee5540af08912443b0a89, type: 2}
+  - {fileID: 7400000, guid: c50658993d34a814196104f0081a2c38, type: 2}
+  - {fileID: 7400000, guid: 64d5d914959522b4f9b180828beed0cd, type: 2}
+  - {fileID: 7400000, guid: 507553ffdfe4b364aafbffcf903fc4f7, type: 2}
+  - {fileID: 7400000, guid: a3df0d8ee4e092f4f897ac87af209f02, type: 2}
+  - {fileID: 7400000, guid: 5359e961c96a9494dbc002b1ef5fab46, type: 2}
+  - {fileID: 7400000, guid: 05c8a90b56593ec4da6f6ad266d2d4a1, type: 2}
+  - {fileID: 7400000, guid: 572843db208d0634c8afe684187333c6, type: 2}
+  - {fileID: 7400000, guid: 54bbd20aef6d69143a57efdeac52b4d3, type: 2}
+  - {fileID: 7400000, guid: b453ef7927afdb7448481153cd68fdb2, type: 2}
+  - {fileID: 7400000, guid: d8b515a82d8e14d4ab88626c67db4d75, type: 2}
+  - {fileID: 7400000, guid: b7bea63c594570645810fcbf69ec69ae, type: 2}
+  - {fileID: 7400000, guid: 42ca84af72f21314aaa8548ac00fce21, type: 2}
+  - {fileID: 7400000, guid: 2659ce6a7a0a1a4429637c2b3ae4bd4d, type: 2}
+  - {fileID: 7400000, guid: 3cf776e2cee89444eaba78dbc767c7b8, type: 2}
+  - {fileID: 7400000, guid: ec76a622e58307f43a2e48cbe31e4ef6, type: 2}

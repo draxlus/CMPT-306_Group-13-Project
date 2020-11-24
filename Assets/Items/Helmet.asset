@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb021ccb720e441b5a22002dbd9520, type: 3}
   m_Name: Helmet
   m_EditorClassIdentifier: 
+  id: fe376fa1424eed64480a356e239f804d
   ItemName: Helmet
   Icon: {fileID: 21300000, guid: f28eaf5ce40bfb14ba3cd1a7a280fe12, type: 3}
+  MaximumStacks: 1
   HealthBonus: 10
   StrengthBonus: 0
   SpeedBonus: 0
@@ -21,3 +23,20 @@ MonoBehaviour:
   StrengthPercentBonus: 0
   SpeedPercentBonus: 0
   EquipmentType: 0
+  animationClips:
+  - {fileID: 7400000, guid: f44396fd191a0f641a31e76376b247b6, type: 2}
+  - {fileID: 7400000, guid: f707c2cb10256084593c2c3f53fcaf5c, type: 2}
+  - {fileID: 7400000, guid: aef58b2c4b500d0409d7735d90dd8b1e, type: 2}
+  - {fileID: 7400000, guid: 447f8a39ad7b5f3469a70ad9fc1f6c14, type: 2}
+  - {fileID: 7400000, guid: 46f0476c3afdd0046991240706a27c8b, type: 2}
+  - {fileID: 7400000, guid: bbf27fc607d0e7341b8b90dc3008630f, type: 2}
+  - {fileID: 7400000, guid: ec60e281582a54549ae22b39ea886aa9, type: 2}
+  - {fileID: 7400000, guid: e4bebc50c750f304aaad93af25870f61, type: 2}
+  - {fileID: 7400000, guid: 126cc35c36e693649b5ae18953c9dbb5, type: 2}
+  - {fileID: 7400000, guid: cff05bf78896d874e9efc6e32da10092, type: 2}
+  - {fileID: 7400000, guid: 87dc34b67811568449e7d61df593eb9d, type: 2}
+  - {fileID: 7400000, guid: 27482b9c13a690643b337909df3d69a1, type: 2}
+  - {fileID: 7400000, guid: 313521ad48aa3124d801326eebd9e38b, type: 2}
+  - {fileID: 7400000, guid: 2b386626754d9be4bb037c84557d9dfe, type: 2}
+  - {fileID: 7400000, guid: c3debabf51349b849bf67ec69e249610, type: 2}
+  - {fileID: 7400000, guid: 133f8a0cfc8b7784d8cb79a38907aa42, type: 2}

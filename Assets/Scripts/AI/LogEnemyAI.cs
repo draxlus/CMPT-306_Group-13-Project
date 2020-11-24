@@ -23,6 +23,7 @@ public class LogEnemyAI : Enemy
         currentState = EnemyState.idle;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
     
     }
 

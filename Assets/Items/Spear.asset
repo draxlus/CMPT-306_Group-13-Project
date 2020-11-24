@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb021ccb720e441b5a22002dbd9520, type: 3}
   m_Name: Spear
   m_EditorClassIdentifier: 
+  id: 3e41429a7de56af4a8bff5329327de53
   ItemName: Spear
   Icon: {fileID: 21300000, guid: 951d133cd8eb937419795c137451c853, type: 3}
+  MaximumStacks: 1
   HealthBonus: 0
   StrengthBonus: 7
   SpeedBonus: -1
@@ -21,3 +23,12 @@ MonoBehaviour:
   StrengthPercentBonus: 0
   SpeedPercentBonus: 0
   EquipmentType: 4
+  animationClips:
+  - {fileID: 7400000, guid: f4541baffb88b6549803aff4d1694ced, type: 2}
+  - {fileID: 7400000, guid: e969d68a743a4ae4993c4e41c8428bce, type: 2}
+  - {fileID: 7400000, guid: 8739ab34d5ce87b4cac3e0e6f12a5d97, type: 2}
+  - {fileID: 7400000, guid: 182911b22ddcfd54d8586a6fd2bb9ca6, type: 2}
+  - {fileID: 7400000, guid: 053431f93a155354c8f12af71324e988, type: 2}
+  - {fileID: 7400000, guid: 12dcf4c05cc3a7b4d93fadea280d824e, type: 2}
+  - {fileID: 7400000, guid: cad5ecffbc31f2d479ca5b711609cc9d, type: 2}
+  - {fileID: 7400000, guid: 5de859c108f945d4695deb927cd951e4, type: 2}
