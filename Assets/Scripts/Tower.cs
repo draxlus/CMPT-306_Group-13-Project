@@ -18,14 +18,14 @@ public class Tower : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        //if (collider.gameObject.CompareTag("Enemy"))
-        //{
-        //    if (health > 0)
-        //    {
-        //        health -= .05f;
-        //        healthBar.SetSize(health);
-        //    }
-        //}
+        if (collider.gameObject.CompareTag("Enemy"))
+        {
+            if (health > 0)
+           {
+               health -= .05f;
+               healthBar.SetSize(health);
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

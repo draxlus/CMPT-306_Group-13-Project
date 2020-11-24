@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1726206608622969199}
   - component: {fileID: 1726206608622969197}
   - component: {fileID: 1726206608622969196}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Logboi
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 92462443
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -5034061168752090764, guid: 66e93c04ad91b90419eaac0927ba8dc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -197,7 +197,6 @@ MonoBehaviour:
   maxHealth: {fileID: 11400000, guid: e874c1bc5d2eb6443a42bf08d36f8d0e, type: 2}
   health: 0
   enemy_name: LogMonster
-  baseAttack: 1
   moveSpeed: 1
   hitCount: 0
   healthBar: {fileID: 2194377093096667109}
@@ -229,7 +228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2194377093079328441}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ObjectBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2194377093096667107}
   - component: {fileID: 2194377093096667109}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2194377093282132153}
   - component: {fileID: 2194377093282132158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,8 +364,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1300548437
-  m_SortingLayer: 3
+  m_SortingLayerID: 338924897
+  m_SortingLayer: 4
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: eb3c8da7c532b0549903625b3c4597e2, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -389,7 +388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2194377094186438138}
   - component: {fileID: 2194377094186438139}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,8 +446,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1300548437
-  m_SortingLayer: 3
+  m_SortingLayerID: 338924897
+  m_SortingLayer: 4
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: eb3c8da7c532b0549903625b3c4597e2, type: 3}
   m_Color: {r: 0.91066456, g: 0, b: 1, a: 1}
@@ -471,7 +470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2194377094664978073}
   - component: {fileID: 2194377094664978078}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,8 +528,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1300548437
-  m_SortingLayer: 3
+  m_SortingLayerID: 338924897
+  m_SortingLayer: 4
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: eb3c8da7c532b0549903625b3c4597e2, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}

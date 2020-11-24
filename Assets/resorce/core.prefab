@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5758022788945801038}
   - component: {fileID: 4803482009609289203}
   - component: {fileID: -705291823075289180}
-  - component: {fileID: -4469166235436167711}
   - component: {fileID: 2050623999440847236}
+  - component: {fileID: 3653074707136553493}
   m_Layer: 0
   m_Name: core
   m_TagString: Untagged
@@ -73,11 +73,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 338924897
+  m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9e7c92b669824a439e27bd9ad63ab50, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -7693048406743456309, guid: f2ef072cd25bb5b459d7817df67b21dd, type: 3}
+  m_Color: {r: 0.04513645, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -122,32 +122,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &-4469166235436167711
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3786850323366980201}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.007418245, y: -0.16000032}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 2, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.7910385, y: 1.4682264}
-  m_EdgeRadius: 0
 --- !u!61 &2050623999440847236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -161,19 +135,34 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0076134205, y: -0.17565691}
+  m_Offset: {x: 0.010774195, y: -0.6598644}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1, y: 3}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8129797, y: 1.4689286}
+  m_Size: {x: 0.9303733, y: 0.9663334}
   m_EdgeRadius: 0
+--- !u!114 &3653074707136553493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786850323366980201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba432d0775237e1429a6fa956b2c2f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 5
+  knockTime: 0.2
+  damage: 0
 --- !u!114 &1177637065114755182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +182,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1157277948319837793}
     m_Modifications:
+    - target: {fileID: 4150442907857759934, guid: 5c4d9b3b75ac435478c0935c1f9f337c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 818655521
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150442907857759934, guid: 5c4d9b3b75ac435478c0935c1f9f337c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150442907928124891, guid: 5c4d9b3b75ac435478c0935c1f9f337c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 818655521
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150442907928124891, guid: 5c4d9b3b75ac435478c0935c1f9f337c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150442908690928635, guid: 5c4d9b3b75ac435478c0935c1f9f337c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 818655521
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150442908690928635, guid: 5c4d9b3b75ac435478c0935c1f9f337c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4150442908876395686, guid: 5c4d9b3b75ac435478c0935c1f9f337c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

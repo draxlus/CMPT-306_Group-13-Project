@@ -37,10 +37,10 @@ public class MissileTower : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         print("COLLISION NAME" + collision.gameObject.name);
-        if (collision.gameObject.name == "Logboi(Clone)" || collision.gameObject.name == "Enemy(Clone)")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             enemy = collision.gameObject;
             if (!hasFired)

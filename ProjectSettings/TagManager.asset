@@ -19,7 +19,7 @@ TagManager:
   - 
   - 
   - missile
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -49,6 +49,15 @@ TagManager:
   - name: Armour
     uniqueID: 2678199325
     locked: 0
+  - name: Enemies
+    uniqueID: 893094669
+    locked: 0
   - name: Player
     uniqueID: 92462443
+    locked: 0
+  - name: Towers
+    uniqueID: 338924897
+    locked: 0
+  - name: HealthBars
+    uniqueID: 818655521
     locked: 0

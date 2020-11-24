@@ -15,7 +15,6 @@ public class Enemy : MonoBehaviour
     public FloatValue maxHealth;
     public float health;
     public string enemy_name;
-    public int baseAttack;
     public float moveSpeed;
 
     public int hitCount = 0;
@@ -27,16 +26,22 @@ public class Enemy : MonoBehaviour
     }
 
     private void TakeDamage(float damage){
+
         health -= damage;
-        healthBar.SetSize((health - (damage/maxHealth.initialValue))/10);
+        healthBar.SetSize(health - (damage/maxHealth.initialValue));
         if (health <= 0){
             this.gameObject.SetActive(false);
         }
     }
 
     public void Knock(Rigidbody2D myRigidBody, float knocktime, float damage){
-        StartCoroutine(KnockCo(myRigidBody,knocktime));
-        TakeDamage(damage);
+        if (damage > 0){
+            StartCoroutine(KnockCo(myRigidBody,knocktime));
+            TakeDamage(damage);
+        }
+        else{
+            StartCoroutine(KnockCo(myRigidBody, knocktime));
+        }
     }
     private IEnumerator KnockCo(Rigidbody2D myRigidBody, float knocktime){
 
