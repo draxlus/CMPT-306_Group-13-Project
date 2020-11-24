@@ -23,8 +23,8 @@ public class MissileTower : MonoBehaviour {
         for (int i = 0; i <= 10 - 1; i++)
         {
 
-            float projectileDirXposition = transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180) * 5;
-            float projectileDirYposition = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180) * 5;
+            float projectileDirXposition = transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180) * 2;
+            float projectileDirYposition = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180) * 2;
 
             Vector2 projectileVector = new Vector2(projectileDirXposition, projectileDirYposition);
             Vector2 projectileMoveDirection = (projectileVector - new Vector2(transform.position.x, transform.position.y)).normalized * 5;
@@ -40,7 +40,7 @@ public class MissileTower : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("COLLISION NAME" + collision.gameObject.name);
-        if (collision.gameObject.name == "Logboi" || collision.gameObject.name == "Enemy")
+        if (collision.gameObject.name == "Logboi(Clone)" || collision.gameObject.name == "Enemy(Clone)")
         {
             enemy = collision.gameObject;
             if (!hasFired)

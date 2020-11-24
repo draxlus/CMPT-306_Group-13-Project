@@ -14,11 +14,17 @@ public class Missile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "Logboi" || collision.gameObject.name == "Enemy")
+        if(collision.gameObject.name == "Logboi(Clone)" || collision.gameObject.name == "Enemy(Clone)")
         {
             //Kill the enemy
             Destroy(collision.gameObject);
         }
+    }
+
+    private void OnBecameInvisible()
+    {
+        print("destroying bullet");
+        Destroy(gameObject);
     }
 
 }
