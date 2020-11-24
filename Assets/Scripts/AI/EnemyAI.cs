@@ -279,39 +279,21 @@ public class EnemyAI : Player
         return false;
     }
 
-    ////Purpose: Attacks either the player or the tower based on a heuristic
-    //private void attackTarget()
-    //{
-    //    Vector2 playerPos = new Vector2(player.transform.position.x, player.transform.position.y);
-    //    Vector2 towerPos = new Vector2(tower.transform.position.x, tower.transform.position.y);
-    //    Node enemyNode = new Node((int)transform.position.x, (int)transform.position.y, World.findNodeNameAtPosition(transform.position), false);
-
-    //    if (player.health > tower.health)
-    //    {
-    //        //Attack the tower
-    //        Node tower = new Node((int)towerPos.x, (int)towerPos.y, World.findNodeNameAtPosition(towerPos), false);
-    //        findPath(World.worldToMarix(), enemyNode, tower);
-    //        print("Attacking tower");
-    //    }
-    //    else
-    //    {
-    //        Node tower = new Node((int)playerPos.x, (int)playerPos.y, World.findNodeNameAtPosition(playerPos), false);
-    //        print("Attacking player");
-
-    //    }
-    //}
-
-    //private void Start()
-    //{
-    //    worldDimension = World.worldHeight;
-    //    Invoke("attackTarget", 1);
-    //}
-
     public EnemyAI(int wd)
     {
         worldDimension = wd;
     }
 
+
+
+    private void Start()
+    {
+
+    }
+
+    
+    
+    
    
 
 }

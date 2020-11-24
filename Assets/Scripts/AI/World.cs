@@ -18,16 +18,19 @@ public class World : MonoBehaviour
 
     public void drawGrid()
     {
-        for (int i = 0; i < dim; i++)
+        int row = 0;
+        int col = 0;
+        for (int i = -dim; i <= dim; i++)
         {
-            for (int j = 0; j < dim; j++)
+            for (int j = -dim; j <= dim; j++)
             {
-                world[i, j] = new Node(i, j, n, false);
+                world[row, col] = new Node(row, col, n, false);
                 GameObject c = Instantiate(gridCube, new Vector3(i, j, 0), Quaternion.identity);
                 c.name = n.ToString();
                 n++;
-
+                col++;
             }
+            row++;
         }
     }
 
