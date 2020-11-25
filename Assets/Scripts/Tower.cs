@@ -28,19 +28,6 @@ public class Tower : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            if (health > 0)
-            {
-                health -= .05f;
-                healthBar.SetSize(health);
-            }
-        }
-    }
-
-
     private void IsDead()
     {
         if (health <= 0)

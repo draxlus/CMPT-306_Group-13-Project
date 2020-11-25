@@ -9,6 +9,7 @@ public class ObjectHealthBar : MonoBehaviour
     void Start()
     {
         bar = transform.Find("ObjectBar");
+        
     }
 
    public void SetSize(float sizeNormalized){

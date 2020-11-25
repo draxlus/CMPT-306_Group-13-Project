@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 338924897
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 6331881677866438491, guid: f2ef072cd25bb5b459d7817df67b21dd, type: 3}
   m_Color: {r: 1, g: 0, b: 0.17090273, a: 1}
   m_FlipX: 0
@@ -188,7 +188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missile: {fileID: 6778103746300307267, guid: d2c9eb66a14f5440f8d3f05e21db07b4, type: 3}
-  triggerRadius: 6
 --- !u!114 &1177637065114755182
 MonoBehaviour:
   m_ObjectHideFlags: 0
