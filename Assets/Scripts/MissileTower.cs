@@ -11,7 +11,7 @@ public class MissileTower : MonoBehaviour {
 
     private void Start()
     {
-        reloadTime = 2f;
+        reloadTime = 10f;
         hasFired = false;
     }
 
@@ -46,7 +46,7 @@ public class MissileTower : MonoBehaviour {
             if (!hasFired)
             {
                 print("Shot");
-                reloadTime = 5;
+                reloadTime = 10;
                 shoot();
                 hasFired = true;
             }
@@ -63,7 +63,7 @@ public class MissileTower : MonoBehaviour {
         else if(reloadTime < 0)
         {
             hasFired = false;
-            reloadTime = 5f;
+            reloadTime = 10f;
             print("Can fire again");
         }
 

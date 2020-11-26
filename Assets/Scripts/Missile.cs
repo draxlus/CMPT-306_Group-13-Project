@@ -24,6 +24,7 @@ public class Missile : MonoBehaviour
             Rigidbody2D other = collision.GetComponent<Rigidbody2D>();
             other.GetComponent<Enemy>().currentState = EnemyState.stagger;
             collision.GetComponent<Enemy>().Knock(other, knockTime, damage);
+            
         }
     }
 
