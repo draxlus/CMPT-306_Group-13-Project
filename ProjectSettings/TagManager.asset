@@ -9,6 +9,7 @@ TagManager:
   - World
   - PlayerAttack
   - Hits
+  - Swamp
   layers:
   - Default
   - TransparentFX
