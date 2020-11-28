@@ -102,6 +102,7 @@
     <Compile Include="Assets/Scripts/respawnresoures.cs" />
     <Compile Include="Assets/Scripts/Movement/CameraMovement.cs" />
     <Compile Include="Assets/Scripts/Inventory/DropItemArea.cs" />
+    <Compile Include="Assets/Scripts/SwampPointMobGeneration.cs" />
     <Compile Include="Assets/Scripts/LootDrop.cs" />
     <Compile Include="Assets/Scripts/Inventory/Inventory.cs" />
     <Compile Include="Assets/Scenes/Testing/gun.cs" />
@@ -109,7 +110,7 @@
     <Compile Include="Assets/Scripts/Inventory/InventoryInput.cs" />
     <Compile Include="Assets/Scripts/Managers/WorldMapperManager.cs" />
     <Compile Include="Assets/Scripts/Inventory/IItemContainer.cs" />
-    <Compile Include="Assets/Scripts/SwampPointMobGeneration.cs" />
+    <Compile Include="Assets/Scripts/WinCondition.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

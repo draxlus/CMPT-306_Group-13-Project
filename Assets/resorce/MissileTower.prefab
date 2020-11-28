@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8659673127365354759}
   m_Layer: 0
   m_Name: MissileTower
-  m_TagString: Untagged
+  m_TagString: NotMainTower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 338924897
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 6331881677866438491, guid: f2ef072cd25bb5b459d7817df67b21dd, type: 3}
   m_Color: {r: 1, g: 0, b: 0.17090273, a: 1}

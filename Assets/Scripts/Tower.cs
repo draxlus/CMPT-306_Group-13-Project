@@ -30,9 +30,13 @@ public class Tower : MonoBehaviour
 
     private void IsDead()
     {
-        if (health <= 0)
+        if (health <= 0 && (!gameObject.CompareTag("NotMainTower")))
         {
             SceneManager.LoadScene(0);
+        }
+        else if(health <= 0 && gameObject.CompareTag("NotMainTower"))
+        {
+            Destroy(gameObject);
         }
     }
 
