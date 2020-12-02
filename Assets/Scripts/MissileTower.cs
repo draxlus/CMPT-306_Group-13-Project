@@ -45,7 +45,7 @@ public class MissileTower : MonoBehaviour {
             enemy = collision.gameObject;
             if (!hasFired)
             {
-                print("Shot");
+                //print("Shot");
                 reloadTime = 5;
                 shoot();
                 hasFired = true;
@@ -58,13 +58,13 @@ public class MissileTower : MonoBehaviour {
         if(reloadTime >= 0 && hasFired)
         {
             reloadTime -= Time.deltaTime;
-            print("Reloading");
+            //print("Reloading");
         }
         else if(reloadTime < 0)
         {
             hasFired = false;
             reloadTime = 5f;
-            print("Can fire again");
+            //print("Can fire again");
         }
 
         
