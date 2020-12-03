@@ -59,15 +59,19 @@
     <Compile Include="Assets/DayNight.cs" />
     <Compile Include="Assets/Scripts/AI/EnemyFollow.cs" />
     <Compile Include="Assets/Scripts/Crafting/CraftingRecipeUI.cs" />
+    <Compile Include="Assets/Scripts/AI/SkeleAngeryEnemyAI.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
+    <Compile Include="Assets/Scripts/AI/SkeleEnemyAI.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/FloatValue.cs" />
     <Compile Include="Assets/Scripts/Items/ItemContainer.cs" />
     <Compile Include="Assets/Scripts/Inventory/QuestionDialog.cs" />
     <Compile Include="Assets/Scripts/Missile.cs" />
     <Compile Include="Assets/Scripts/AI/EnemyAI.cs" />
-    <Compile Include="Assets/resorce/swamppoint.cs" />
+    <Compile Include="Assets/Scripts/swamppoint.cs" />
+    <Compile Include="Assets/Scripts/GameOver/ButtonManager.cs" />
     <Compile Include="Assets/Scripts/MobGenerationManager.cs" />
     <Compile Include="Assets/Scripts/MissileTower.cs" />
+    <Compile Include="Assets/Scripts/TowerCrafting.cs" />
     <Compile Include="Assets/placeswp.cs" />
     <Compile Include="Assets/Scripts/Items/Item.cs" />
     <Compile Include="Assets/Scripts/AI/PathFinder.cs" />
@@ -95,6 +99,7 @@
     <Compile Include="Assets/Scripts/Items/EquippableItem.cs" />
     <Compile Include="Assets/Scripts/Inventory/EquipmentPanel.cs" />
     <Compile Include="Assets/mapgenerate.cs" />
+    <Compile Include="Assets/Scripts/MTower2.cs" />
     <Compile Include="Assets/Scripts/UI/PauseMenu.cs" />
     <Compile Include="Assets/Scripts/Inventory/StatDisplay.cs" />
     <Compile Include="Assets/Scripts/Crafting/CraftingWindow.cs" />
@@ -102,15 +107,16 @@
     <Compile Include="Assets/Scripts/respawnresoures.cs" />
     <Compile Include="Assets/Scripts/Movement/CameraMovement.cs" />
     <Compile Include="Assets/Scripts/Inventory/DropItemArea.cs" />
+    <Compile Include="Assets/Scripts/WinCondition.cs" />
     <Compile Include="Assets/Scripts/SwampPointMobGeneration.cs" />
     <Compile Include="Assets/Scripts/LootDrop.cs" />
     <Compile Include="Assets/Scripts/Inventory/Inventory.cs" />
+    <Compile Include="Assets/Scripts/NotificationManager.cs" />
     <Compile Include="Assets/Scenes/Testing/gun.cs" />
     <Compile Include="Assets/Scripts/AI/Node.cs" />
     <Compile Include="Assets/Scripts/Inventory/InventoryInput.cs" />
     <Compile Include="Assets/Scripts/Managers/WorldMapperManager.cs" />
     <Compile Include="Assets/Scripts/Inventory/IItemContainer.cs" />
-    <Compile Include="Assets/Scripts/WinCondition.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

@@ -11,6 +11,7 @@ public class MobGenerationManager : MonoBehaviour
     public int maxEnemies;
     private float timeRemaining; //Time before another group of enemies is spawned
     public static int currentEnemies; //Number of enemies on screen
+    [SerializeField] DayNight dn;
 
     private void Start()
     {
@@ -40,6 +41,7 @@ public class MobGenerationManager : MonoBehaviour
 
     private void createEnemies(int num)
     {
+        print(dn.sun.intensity);
         while(num > 0)
         {
             if(currentEnemies < maxEnemies)

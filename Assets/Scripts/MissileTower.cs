@@ -6,8 +6,9 @@ public class MissileTower : MonoBehaviour {
 
     public GameObject missile;
     private float reloadTime;
-    private GameObject enemy;
+    private GameObject[] enemies;
     private bool hasFired;
+    public float radius = 6;
 
     private void Start()
     {
@@ -37,24 +38,40 @@ public class MissileTower : MonoBehaviour {
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void checkDistance()
     {
-        print("COLLISION NAME" + collision.gameObject.name);
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (enemies != null)
         {
-            enemy = collision.gameObject;
-            if (!hasFired)
+            foreach (GameObject enemy in enemies)
             {
-                print("Shot");
-                reloadTime = 5;
-                shoot();
-                hasFired = true;
+                float distance = Vector3.Distance(transform.position, enemy.transform.position);
+
+                if (distance <= radius)
+
+                {
+
+                    if (!hasFired)
+                    {
+                        print("Shot");
+                        reloadTime = 5;
+                        shoot();
+                        hasFired = true;
+                    }
+                }
             }
         }
     }
 
+
+    private void findEnemies()
+    {
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+    }
+
     private void Update()
     {
+        Invoke("findEnemies", 2);
         if(reloadTime >= 0 && hasFired)
         {
             reloadTime -= Time.deltaTime;
@@ -66,7 +83,6 @@ public class MissileTower : MonoBehaviour {
             reloadTime = 5f;
             print("Can fire again");
         }
-
-        
+        checkDistance();
     }
 }

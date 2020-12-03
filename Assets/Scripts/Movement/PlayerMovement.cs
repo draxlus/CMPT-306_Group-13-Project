@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum PlayerState{
     idle,
@@ -85,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
         health -= damage;
         healthBar.SetSize((health - (damage/maxHealth))/10);
         if (health <= 0){
-            this.gameObject.SetActive(false);
+            SceneManager.LoadScene(2);
         }
     }
 

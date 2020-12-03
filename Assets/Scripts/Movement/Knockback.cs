@@ -11,7 +11,7 @@ public class Knockback : MonoBehaviour
     //On attack test if the object being hit is an hit if it is a call is made to 
     //the enemies Knockable script to apply knockback to the hit
     private void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Player")){
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Swamp")){
             Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
             if (hit != null){
                 Vector2 difference = hit.transform.position - transform.position;
@@ -34,7 +34,17 @@ public class Knockback : MonoBehaviour
                     }
                         
                 }
-                
+                if (other.gameObject.CompareTag("Swamp"))
+                {
+                    other.GetComponent<swamppoint>().hitCount++;
+                    if (other.GetComponent<swamppoint>().hitCount == 1)
+                    {
+                        hit.GetComponent<swamppoint>().currentState = PlayerState.stagger;
+                        other.GetComponent<swamppoint>().Knock(knockTime, damage);
+                    }
+
+                }
+
             }
         }
           
@@ -47,6 +57,8 @@ public class Knockback : MonoBehaviour
             other.GetComponent<Enemy>().hitCount = 0;
         }
     }
+
+   
 }
 
 

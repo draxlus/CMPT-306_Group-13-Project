@@ -11,6 +11,7 @@ TagManager:
   - Hits
   - Swamp
   - NotMainTower
+  - Core
   layers:
   - Default
   - TransparentFX

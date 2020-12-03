@@ -7,6 +7,7 @@ public class Tower : MonoBehaviour
 {
     public float health;
     [SerializeField] ObjectHealthBar healthBar;
+    [SerializeField] BoxCollider2D[] colliders;
 
     private void Update()
     {
@@ -21,18 +22,21 @@ public class Tower : MonoBehaviour
         if (collider.gameObject.CompareTag("Enemy"))
         {
             if (health > 0)
-           {
-               health -= .05f;
-               healthBar.SetSize(health);
+            {
+                health -= .05f;
+                healthBar.SetSize(health);
             }
         }
     }
+
+
+    
 
     private void IsDead()
     {
         if (health <= 0 && (!gameObject.CompareTag("NotMainTower")))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
         else if(health <= 0 && gameObject.CompareTag("NotMainTower"))
         {

@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public EnemyState currentState;
     public FloatValue maxHealth;
     public float health;
+    public float healthRatio = 1;
     public string enemy_name;
     public float moveSpeed;
 
@@ -28,7 +29,8 @@ public class Enemy : MonoBehaviour
     private void TakeDamage(float damage){
 
         health -= damage;
-        healthBar.SetSize(health - (damage/maxHealth.initialValue));
+        healthRatio = healthRatio - (damage / maxHealth.initialValue);
+        healthBar.SetSize(healthRatio);
         if (health <= 0){
             this.gameObject.SetActive(false);
         }
