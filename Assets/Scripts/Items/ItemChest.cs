@@ -6,8 +6,7 @@ public class ItemChest : MonoBehaviour
 	[SerializeField] float amount;
 	[SerializeField] Inventory Inventory;
 	[SerializeField] KeyCode itemPickupKeyCode = KeyCode.E;
-	[SerializeField] ObjectHealthBar healthBar;
-
+	
 	public bool isInRange;
 	public bool isEmpty = false;
 	private float health;
@@ -21,7 +20,6 @@ public class ItemChest : MonoBehaviour
     private void Start()
     {
 		health = 1f;
-		healthBar.SetSize(health);
 	}
 
     private void Update()
@@ -31,16 +29,10 @@ public class ItemChest : MonoBehaviour
             bool added = Inventory.AddItem(item);
 			amount--;
 			
-
-            if (health > 0)
-            {
-				health -= .5f ;
-				healthBar.SetSize(health);
-			}
-
 			if (added & amount == 0)
 			{
 				isEmpty = true;
+				health--;
 				Debug.Log("Added Item");
 				this.gameObject.SetActive(false);
 			}
@@ -50,16 +42,11 @@ public class ItemChest : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		CheckCollision(collision.gameObject, true);
-        if (collision.gameObject.CompareTag("Player"))
-		{
-			healthBar.gameObject.SetActive(true);
-		}
-	}
+    }
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
 		CheckCollision(collision.gameObject, false);
-		healthBar.gameObject.SetActive(false);
 	}
 
 	private void CheckCollision(GameObject gameObject, bool state)
