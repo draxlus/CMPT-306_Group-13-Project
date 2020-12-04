@@ -117,6 +117,7 @@
     <Compile Include="Assets/Scripts/Inventory/InventoryInput.cs" />
     <Compile Include="Assets/Scripts/Managers/WorldMapperManager.cs" />
     <Compile Include="Assets/Scripts/Inventory/IItemContainer.cs" />
+    <Compile Include="Assets/Scripts/SpawnPoint.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

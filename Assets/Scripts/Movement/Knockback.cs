@@ -36,11 +36,10 @@ public class Knockback : MonoBehaviour
                 }
                 if (other.gameObject.CompareTag("Swamp"))
                 {
-                    other.GetComponent<swamppoint>().hitCount++;
-                    if (other.GetComponent<swamppoint>().hitCount == 1)
+                    other.GetComponent<SpawnPoint>().hitCount++;
+                    if (other.GetComponent<SpawnPoint>().hitCount == 1)
                     {
-                        hit.GetComponent<swamppoint>().currentState = PlayerState.stagger;
-                        other.GetComponent<swamppoint>().Knock(knockTime, damage);
+                        other.GetComponent<SpawnPoint>().Knock(knockTime, damage);
                     }
 
                 }
