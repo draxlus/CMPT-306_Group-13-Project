@@ -36,7 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AI\SkeleAngeryEnemyAI.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemTooltip.cs" />
+     <Compile Include="Assets\Scripts\AI\SkeleEnemyAI.cs" />
      <Compile Include="Assets\DayNight.cs" />
      <Compile Include="Assets\Scripts\AI\EnemyFollow.cs" />
      <Compile Include="Assets\Scripts\Crafting\CraftingRecipeUI.cs" />
@@ -79,7 +81,6 @@
      <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Inventory\StatDisplay.cs" />
      <Compile Include="Assets\Scripts\Crafting\CraftingWindow.cs" />
-     <Compile Include="Assets\Scripts\Health_bars\PlayerHealthBar.cs" />
      <Compile Include="Assets\Scripts\respawnresoures.cs" />
      <Compile Include="Assets\Scripts\Movement\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Inventory\DropItemArea.cs" />
@@ -90,8 +91,6 @@
      <Compile Include="Assets\Scripts\Inventory\InventoryInput.cs" />
      <Compile Include="Assets\Scripts\Managers\WorldMapperManager.cs" />
      <Compile Include="Assets\Scripts\Inventory\IItemContainer.cs" />
-     <Compile Include="Assets\Scripts\AI\SkeleEnemyAI.cs" />
-     <Compile Include="Assets\Scripts\AI\SkeleAngeryEnemyAI.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
