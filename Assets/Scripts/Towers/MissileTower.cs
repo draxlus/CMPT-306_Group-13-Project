@@ -12,7 +12,7 @@ public class MissileTower : MonoBehaviour {
 
     private void Start()
     {
-        reloadTime = 2f;
+        reloadTime = 1f;
         hasFired = false;
     }
 
@@ -80,7 +80,7 @@ public class MissileTower : MonoBehaviour {
         else if(reloadTime < 0)
         {
             hasFired = false;
-            reloadTime = 5f;
+            reloadTime = 2f;
             print("Can fire again");
         }
         checkDistance();

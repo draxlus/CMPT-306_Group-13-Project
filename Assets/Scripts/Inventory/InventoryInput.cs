@@ -12,6 +12,14 @@ public class InventoryInput : MonoBehaviour
         if (Input.GetKeyDown(toggleInventoryKey))
         {
             inventoryGameObject.SetActive(!inventoryGameObject.activeSelf);
+            if (inventoryGameObject.activeSelf)
+            {
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                Time.timeScale = 1f;
+            }
         }
     }
 }

@@ -18,7 +18,7 @@ public class DayNight : MonoBehaviour
     {
         while(sun.intensity > 0.3f)
         {
-            sun.intensity -= 0.01f;
+            sun.intensity -= 0.002f;
             yield return new WaitForSeconds(0.1f);
         }
         StartCoroutine(Sunrise());
@@ -29,7 +29,7 @@ public class DayNight : MonoBehaviour
     {
         while (sun.intensity < 1f)
         {
-            sun.intensity += 0.01f;
+            sun.intensity += 0.002f;
             yield return new WaitForSeconds(0.1f);
         }
         StartCoroutine(Sunset());

@@ -34,6 +34,7 @@ public class ItemChest : MonoBehaviour
 				isEmpty = true;
 				health--;
 				Debug.Log("Added Item");
+				NotificationManager.Instance.SetNewNotification("Added " + item.name);
 				this.gameObject.SetActive(false);
 			}
 		}

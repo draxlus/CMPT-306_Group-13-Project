@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3409139394966404049}
   - component: {fileID: 4292104198151752152}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3409139394982685323}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ObjectBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3409139395185425547}
   - component: {fileID: 3409139395185425548}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3409139396022649288}
   - component: {fileID: 3409139396022649289}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3409139396484969131}
   - component: {fileID: 3409139396484969132}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 9065537592076815633}
   - component: {fileID: 313427766094774119}
   - component: {fileID: 7555424667426016257}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: swamppoint
   m_TagString: Swamp
   m_Icon: {fileID: 0}

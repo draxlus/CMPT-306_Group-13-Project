@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: c8c0b30e60b15c84bb7a27608eb73271
   ItemName: Green Gem
-  MaxStacks: 5
   Icon: {fileID: 21300000, guid: 2e5fde9504df0dc4c8f2428db31cb5e0, type: 3}
+  MaximumStacks: 1
   HealthBonus: 0
   StrengthBonus: 0
   SpeedBonus: 0

@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private float maxHealth;
     public float health;
 
+    [SerializeField] Inventory inventory;
+    [SerializeField] List<ItemAmount> materials;
     public int hitCount = 0;
 
     
@@ -35,17 +37,28 @@ public class PlayerMovement : MonoBehaviour
         maxHealth = health;
     }
 
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
+        {
+            StartCoroutine(AttackCo());
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            HealthIncrease();
+        } 
+    }
+
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger){
-            StartCoroutine(AttackCo());
-        }
-        else if(currentState == PlayerState.walk || currentState == PlayerState.idle){
+       
+        if(currentState == PlayerState.walk || currentState == PlayerState.idle){
             UpdateAnimationAndMove();
         }
     }
@@ -86,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
         health -= damage;
         healthBar.SetSize((health - (damage/maxHealth))/10);
         if (health <= 0){
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 
@@ -103,6 +116,29 @@ public class PlayerMovement : MonoBehaviour
             currentState = PlayerState.idle;
             rb.velocity = Vector2.zero;
             hitCount = 0;
+        }
+    }
+
+    private void HealthIncrease()
+    {
+        foreach (ItemAmount itemAmount in materials)
+        {
+            if (inventory.ItemCount(itemAmount.Item.ID) < itemAmount.Amount)
+            {
+                Debug.LogWarning("You don't have the required materials.");
+                NotificationManager.Instance.SetNewNotification("No Green Gem in Inventory");
+            }
+            else
+            {
+                for (int j = 0; j < itemAmount.Amount; j++)
+                {
+                    Item oldItem = inventory.RemoveItem(itemAmount.Item.ID);
+                    oldItem.Destroy();
+                }
+                health += 2f;
+                healthBar.SetSize(health/10);
+                NotificationManager.Instance.SetNewNotification("Consumed " + itemAmount.Item.name);
+            }
         }
     }
 }

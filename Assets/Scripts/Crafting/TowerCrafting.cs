@@ -45,7 +45,7 @@ public class TowerCrafting : MonoBehaviour
                         }
                         GameObject p = Instantiate(towers[i], playerPos.position + (transform.forward * 2), playerPos.rotation);
                         p.SetActive(true);
-                        NotificationManager.Instance.SetNewNotification("Removed 5 wood and built a tower");
+                        NotificationManager.Instance.SetNewNotification("Removed items and built a tower");
                         print("Built tower");
                     }
                 } 

@@ -36,7 +36,7 @@ public class Tower : MonoBehaviour
     {
         if (health <= 0 && (!gameObject.CompareTag("NotMainTower")))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
         else if(health <= 0 && gameObject.CompareTag("NotMainTower"))
         {

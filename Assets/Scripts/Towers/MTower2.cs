@@ -78,7 +78,7 @@ public class MTower2 : MonoBehaviour
         else if (reloadTime < 0)
         {
             hasFired = false;
-            reloadTime = 5f;
+            reloadTime = 2f;
             print("Can fire again");
         }
         checkDistance();
